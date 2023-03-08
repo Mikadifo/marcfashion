@@ -65,3 +65,18 @@ html {
   --h6-phone-size: 18px;
   --h6-phone-height: 22px;
 }
+
+@font-face {
+  font-family: Lato-Regular;
+  src: url(./resources/fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: Jost-Bold;
+  src: url(./resources/fonts/Jost-Bold.ttf);
+}
+
+@font-face {
+  font-family: Jost-Light;
+  src: url(./resources/fonts/Jost-Light.ttf);
+}
