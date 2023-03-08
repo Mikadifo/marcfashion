@@ -19,51 +19,60 @@ html {
 
   --paragraph-size: 21px;
   --paragraph-height: 30px;
-  --paragraph-font: Montserrat-Regular, sans-serif;
-  --paragraph-phone-size: 18px;
-  --paragraph-phone-height: 28px;
+  --paragraph-font: Lato-Regular, sans-serif;
+  --paragraph-tablet-size: 18px;
+  --paragraph-tablet-height: 28px;
 
-  --h1-size: 88px;
-  --h1-height: 100px;
-  --h1-font-bold: Hind-Bold, sans-serif;
-  --h1-tablet-size: 76px;
-  --h1-tablet-height: 92px;
-  --h1-phone-size: 44px;
-  --h1-phone-height: 54px;
+  --h1-size: 119px;
+  --h1-height: 142px;
+  --h1-font-bold: Jost-Bold, sans-serif;
+  --h1-tablet-size: 100px;
+  --h1-tablet-height: 120px;
+  --h1-phone-size: 54px;
+  --h1-phone-height: 68px;
 
-  --h3-size: 50px;
-  --h3-height: 60px;
-  --h3-font-light: Hind-Light, sans-serif;
-  --h3-font-bold: Hind-Bold, sans-serif;
-  --h3-tablet-size: 42px;
-  --h3-tablet-height: 48px;
-  --h3-phone-size: 32px;
-  --h3-phone-height: 38px;
+  --h2-size: 84px;
+  --h2-height: 102px;
+  --h2-font-bold: Jost-Bold, sans-serif;
+  --h2-tablet-size: 72px;
+  --h2-tablet-height: 88px;
+  --h2-phone-size: 44px;
+  --h2-phone-height: 58px;
 
-  --h4-size: 37px;
-  --h4-height: 48px;
-  --h4-font-regular: Hind-Regular, sans-serif;
-  --h4-font-bold: Hind-Bold, sans-serif;
-  --h4-tablet-size: 32px;
-  --h4-tablet-height: 38px;
+  --h3-size: 60px;
+  --h3-height: 72px;
+  --h3-font-light: Jost-Light, sans-serif;
+  --h3-font-bold: Jost-Bold, sans-serif;
+  --h3-tablet-size: 50px;
+  --h3-tablet-height: 60px;
+  --h3-phone-size: 34px;
+  --h3-phone-height: 46px;
+
+  --h4-size: 42px;
+  --h4-height: 52px;
+  --h4-font-bold: Jost-Bold, sans-serif;
+  --h4-tablet-size: 36px;
+  --h4-tablet-height: 42px;
   --h4-phone-size: 26px;
-  --h4-phone-height: 30px;
+  --h4-phone-height: 36px;
 
-  --h5-size: 28px;
-  --h5-height: 36px;
-  --h5-font-light: Hind-Light, sans-serif;
-  --h5-font-bold: Hind-Bold, sans-serif;
-  --h5-tablet-size: 24px;
-  --h5-tablet-height: 30px;
+  --h5-size: 30px;
+  --h5-height: 40px;
+  --h5-font-bold: Jost-Bold, sans-serif;
+  --h5-tablet-size: 26px;
+  --h5-tablet-height: 34px;
   --h5-phone-size: 22px;
-  --h5-phone-height: 26px;
+  --h5-phone-height: 30px;
 
   --h6-size: 21px;
-  --h6-height: 26px;
-  --h6-font-regular: Hind-Regular, sans-serif;
-  --h6-font-bold: Hind-Bold, sans-serif;
+  --h6-height: 28px;
+  --h6-font-bold: Jost-Bold, sans-serif;
   --h6-phone-size: 18px;
-  --h6-phone-height: 22px;
+  --h6-phone-height: 24px;
+
+  --laptop-small-size: 14px;
+  --laptop-small-height: 16px;
+  --laptop-small-regular: Lato-Regular, sans-serif;
 }
 
 @font-face {
