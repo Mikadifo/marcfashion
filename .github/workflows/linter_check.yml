@@ -17,5 +17,5 @@ jobs:
       - name: Check code-style
         uses: creyD/prettier_action@v4.2
         with:
-          prettier_options: --check **/*.{html, js}
+          prettier_options: --check **/*.{html,js}
 
