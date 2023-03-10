@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from './../../logo.jpeg';
+import logo from './../../logo.png';
 import './NavBar.css';
 
 const NavBar = () => {
@@ -36,7 +36,10 @@ const NavBar = () => {
                         <i className="bi bi-list" />
                     )}
                 </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
+                <div
+                    className="collapse navbar-collapse justify-content-end"
+                    id="navbarNav"
+                >
                     <ul className="navbar-nav">
                         <li className="nav-item">
                             <Link
@@ -52,31 +55,21 @@ const NavBar = () => {
                         <li className="nav-item">
                             <Link
                                 className={`nav-link ${
-                                    pathname === '/terapias' && 'current'
+                                    pathname === '/tienda' && 'current'
                                 }`}
-                                to="/terapias"
+                                to="/tienda"
                             >
-                                Terapias
+                                Tienda
                             </Link>
                         </li>
                         <li className="nav-item">
                             <Link
                                 className={`nav-link ${
-                                    pathname === '/instalacion' && 'current'
+                                    pathname === '/conocenos' && 'current'
                                 }`}
-                                to="/instalacion"
+                                to="/conocenos"
                             >
-                                Instalación
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link
-                                className={`nav-link ${
-                                    pathname === '/cuerpo_medico' && 'current'
-                                }`}
-                                to="/cuerpo_medico"
-                            >
-                                Cuerpo Médico
+                                Conócenos
                             </Link>
                         </li>
                         <li className="nav-item">

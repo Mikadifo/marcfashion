@@ -21,6 +21,7 @@ html {
   --paragraph-size: 21px;
   --paragraph-height: 30px;
   --paragraph-font: Lato-Regular, sans-serif;
+  --paragraph-bold: Lato-Bold, sans-serif;
   --paragraph-tablet-size: 18px;
   --paragraph-tablet-height: 28px;
 
@@ -79,6 +80,11 @@ html {
 @font-face {
   font-family: Lato-Regular;
   src: url(./resources/fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato-Bold;
+  src: url(./resources/fonts/Lato-Bold.ttf);
 }
 
 @font-face {
