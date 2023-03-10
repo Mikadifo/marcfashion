@@ -1,11 +1,3 @@
-.footer-margin {
-  margin-top: 168px;
-}
-
-.less-margin {
-  margin-top: 104px;
-}
-
 .foot-info {
   background-color: var(--color-black-05);
   padding: 64px 128px;
@@ -30,27 +22,7 @@
   margin: 0;
   padding: 0;
 }
-/*End Tablet, 729-1024px*/
 
-.foot-icons a {
-  color: rgb(var(--color-black));
-  font-size: 28px;
-  margin: 0 16px;
-}
-
-.foot-icons a:hover {
-  color: var(--color-black-75);
-}
-
-.foot-icons a:active {
-  color: var(--color-black-50);
-}
-
-.foot-button {
-  padding-top: 16px;
-}
-
-/*Begin Tablet, 729-1024px*/
 .foot-copy {
   padding: 28px 0;
   margin: 0 64px;
@@ -77,14 +49,6 @@
 
 /*MOBILE, 0-728px*/
 @media (max-width: 728px) {
-  .less-margin {
-    margin-top: 36px;
-  }
-
-  .footer-margin {
-    margin-top: 100px;
-  }
-
   .foot-info h3 {
     font-size: var(--h3-phone-size);
     line-height: var(--h3-phone-height);
@@ -93,10 +57,6 @@
   .foot-info h5 {
     font-size: var(--h5-phone-size);
     line-height: var(--h5-phone-height);
-  }
-
-  .foot-icons a {
-    font-size: 22px;
   }
 
   .foot-copy {
@@ -109,12 +69,8 @@
 
 /*PC, >= 1025px*/
 @media (min-width: 1025px) {
-  .less-margin {
-    margin-top: 128px;
-  }
-
-  .footer-margin {
-    margin-top: 256px;
+  .foot-info {
+    padding: 128px 256px;
   }
 
   .foot-info h3 {
@@ -125,10 +81,6 @@
   .foot-info h5 {
     font-size: var(--h5-size);
     line-height: var(--h5-height);
-  }
-
-  .foot-icons a {
-    font-size: 32px;
   }
 
   .foot-copy {
