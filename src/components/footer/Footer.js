@@ -16,6 +16,7 @@ const Footer = () => {
                                         to={link.url}
                                         target={link.local ? '' : '_blank'}
                                         rel={link.local ? '' : 'noreferrer'}
+                                        data-testid={link.id}
                                     >
                                         {link.name}
                                     </Link>
