@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import NavBar from '../../components/navbar/NavBar';
 import Button from './../../components/button/Button';
 import homeTemp from './../../resources/imgs/home_temp.png'; //TODO: Change when get imgs
+import { standards } from './../../resources/info/standars';
 import './Home.css';
 import './IntroSection.css';
 import './AboutSection.css';
@@ -48,18 +49,12 @@ const Home = () => {
         <div className="standards">
             <h3 className="text-center">Te ofrecemos</h3>
             <div className="row text-center">
-                <div className="col">
-                    <h1>1</h1>
-                    <p>Las mejores telas</p>
-                </div>
-                <div className="col">
-                    <h1>2</h1>
-                    <p>Estándares de calidad</p>
-                </div>
-                <div className="col">
-                    <h1>3</h1>
-                    <p>Materiales certificados</p>
-                </div>
+                {standards.map((standard) => (
+                    <div className="col" key={standard.id}>
+                        <h1>{standard.title}</h1>
+                        <p>{standard.description}</p>
+                    </div>
+                ))}
             </div>
         </div>
     );
