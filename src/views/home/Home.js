@@ -1,13 +1,13 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import NavBar from '../../components/navbar/NavBar';
 import Button from './../../components/button/Button';
 import homeTemp from './../../resources/imgs/home_temp.png'; //TODO: Change when get imgs
 import './Home.css';
 import './IntroSection.css';
 import './AboutSection.css';
+import './StandardsSection.css';
 
 const Home = () => {
-    const { pathname } = useLocation();
     const introSection = () => (
         <div className="intro text-center">
             <img src={homeTemp} alt="Brand_Model_Picture" />
@@ -44,14 +44,19 @@ const Home = () => {
             </div>
         </div>
     );
+    const standardsSection = () => (
+        <div className="standards">
+            <h3 className="text-center">Te ofrecemos</h3>
+            b1 b2 b3
+        </div>
+    );
 
     return (
         <div data-testid="home">
             {introSection()}
-            {pathname === '/' && <NavBar />}
-            <div className="home-container" data-testid="home">
-                {aboutSection()}
-            </div>
+            <NavBar />
+            {aboutSection()}
+            {standardsSection()}
         </div>
     );
 };

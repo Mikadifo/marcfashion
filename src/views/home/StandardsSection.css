@@ -1,0 +1,26 @@
+/*Begin Tablet, 729-1024px*/
+.standards {
+  background-color: var(--color-black-10);
+  padding: 96px 128px;
+}
+/*Ends Tablet, 729-1024px*/
+
+/*PC, >= 1025px*/
+@media (min-width: 1025px) {
+  .standards {
+    padding: 128px 256px;
+  }
+
+  .standards h3 {
+  }
+}
+
+/*MOBILE, 0-728px*/
+@media (max-width: 728px) {
+  .standards {
+    padding: 96px 64px;
+  }
+
+  .standards h3 {
+  }
+}
