@@ -31,7 +31,7 @@ const Home = () => {
                 estándares de calidad y con la garantía de las mejores telas
                 nacionales y extranjeras.
             </p>
-            <p>
+            <p className="m-0">
                 Contamos con la experiencia necesaria para crear un diseño
                 adecuado para la ocasión de nuestros clientes lo que nos da
                 ventaja sobre otras marcas para poder complacer las exigencias
