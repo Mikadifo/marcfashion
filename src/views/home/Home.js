@@ -1,11 +1,10 @@
 import { Link, useLocation } from 'react-router-dom';
 import NavBar from '../../components/navbar/NavBar';
-//import Button from './../../components/button/Button';
+import Button from './../../components/button/Button';
 import homeTemp from './../../resources/imgs/home_temp.png'; //TODO: Change when get imgs
 import './Home.css';
 import './IntroSection.css';
 
-//Maybe extract the css to only this intro part, or maybe extract both as components
 const Home = () => {
     const { pathname } = useLocation();
     const introSection = () => (
@@ -16,7 +15,7 @@ const Home = () => {
                 <span className="brand-right">FASHION</span>
             </h2>
             <h3>Vistiendo con elegancia</h3>
-            <button>Elige tu Estilo</button>
+            <Button text={'Elige tu estilo'} />
         </div>
     );
 
