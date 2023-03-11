@@ -56,6 +56,14 @@
   color: var(--color-black-50);
 }
 
+.link-hover {
+  opacity: 0.75;
+}
+
+.link-active {
+  opacity: 0.5;
+}
+
 /*PC, >= 1025px*/
 @media (min-width: 1025px) {
   .main-button {

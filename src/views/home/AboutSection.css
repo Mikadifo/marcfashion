@@ -18,6 +18,10 @@
   line-height: var(--paragraph-tablet-height);
   margin-bottom: 32px;
 }
+
+.about button {
+  margin-top: 56px;
+}
 /*Ends Tablet, 729-1024px*/
 
 /*PC, >= 1025px*/
@@ -36,6 +40,10 @@
     font-size: var(--paragraph-size);
     line-height: var(--paragraph-height);
   }
+
+  .about button {
+    margin-top: 64px;
+  }
 }
 
 /*MOBILE, 0-728px*/
@@ -49,5 +57,9 @@
   .about p {
     font-size: var(--paragraph-size);
     line-height: var(--paragraph-height);
+  }
+
+  .about button {
+    margin-top: 48px;
   }
 }

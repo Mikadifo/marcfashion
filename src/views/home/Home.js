@@ -37,7 +37,9 @@ const Home = () => {
                 ventaja sobre otras marcas para poder complacer las exigencias
                 de nuestros consumidores.
             </p>
-            <Button text={'Conócenos más'} style="link" />
+            <div className="text-center">
+                <Button text={'Conócenos más'} style="link" />
+            </div>
         </div>
     );
 
