@@ -7,6 +7,14 @@
   line-height: var(--h3-tablet-height);
   margin-bottom: 56px;
 }
+
+.standards p,
+.about p {
+  color: var(--color-black-75);
+  font-family: var(--paragraph-font);
+  font-size: var(--paragraph-tablet-size);
+  line-height: var(--paragraph-tablet-height);
+}
 /*Ends Tablet, 729-1024px*/
 
 /*PC, >= 1025px*/
@@ -17,6 +25,12 @@
     line-height: var(--h3-height);
     margin-bottom: 64px;
   }
+
+  .standards p,
+  .about p {
+    font-size: var(--paragraph-size);
+    line-height: var(--paragraph-height);
+  }
 }
 
 /*MOBILE, 0-728px*/
@@ -26,5 +40,11 @@
     font-size: var(--h3-phone-size);
     line-height: var(--h3-phone-height);
     margin-bottom: 48px;
+  }
+
+  .standards p,
+  .about p {
+    font-size: var(--paragraph-size);
+    line-height: var(--paragraph-height);
   }
 }

@@ -47,7 +47,20 @@ const Home = () => {
     const standardsSection = () => (
         <div className="standards">
             <h3 className="text-center">Te ofrecemos</h3>
-            b1 b2 b3
+            <div className="row text-center">
+                <div className="col">
+                    <h1>1</h1>
+                    <p>Las mejores telas</p>
+                </div>
+                <div className="col">
+                    <h1>2</h1>
+                    <p>Estándares de calidad</p>
+                </div>
+                <div className="col">
+                    <h1>3</h1>
+                    <p>Materiales certificados</p>
+                </div>
+            </div>
         </div>
     );
 
