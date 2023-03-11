@@ -8,8 +8,10 @@ const Home = () => {
         <div className="home-container" data-testid="home">
             <div className="intro">
                 IMG
-                <h2>MARC</h2>
-                <h2>FASHION</h2>
+                <h2>
+                    <span className="brand-left">MARC</span>
+                    <span className="brand-right">FASHION</span>
+                </h2>
                 <h3>Vistiendo con elegancia</h3>
                 <button>Elige tu Estilo</button>
             </div>
