@@ -1,72 +1,32 @@
 import { Link } from 'react-router-dom';
+import { footerLists } from './../../resources/info/footerLists';
 import './Footer.css';
 
 const Footer = () => {
     return (
         <footer data-testid="footer">
-            <div className="foot-info row">
-                <div className="col">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <Link to="/tienda">Tienda</Link>
-                        </li>
-                        <li>
-                            <Link to="/conocenos">Conócenos</Link>
-                        </li>
-                        <li>
-                            <Link to="/contacto">Contacto</Link>
-                        </li>
-                    </ul>
-                </div>
-                <div className="col">
-                    <h5>Redes</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a
-                                href="https://www.facebook.com/people/MarcFashion/100054329988831/"
-                                rel="noreferrer"
-                                target="_blank"
-                            >
-                                Facebook
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://www.instagram.com/alexistoala/"
-                                rel="noreferrer"
-                                target="_blank"
-                            >
-                                Instagram
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:alexistoala@outlook.com">Email</a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://wa.me/593995487770"
-                                rel="noreferrer"
-                                target="_blank"
-                            >
-                                Whatsapp
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div className="col">
-                    <h5>Ubicación</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!" rel="noreferrer" target="_blank">
-                                San Pedro, Quisapincha Ambato - Ecuador.
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div className="foot-info row" data-testid="foot-info">
+                {footerLists.map((list) => (
+                    <div className="col" key={list.id}>
+                        <h5>{list.title}</h5>
+                        <ul className="list-unstyled">
+                            {list.links.map((link) => (
+                                <li key={link.id}>
+                                    <Link
+                                        to={link.url}
+                                        target={link.local ? '' : '_blank'}
+                                        rel={link.local ? '' : 'noreferrer'}
+                                    >
+                                        {link.name}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                ))}
             </div>
             <div className="foot-copy text-center">
-                © 2023 Marcfashion. Todos los derechos reservados. Desarrollado
+                © 2023 MarcFashion. Todos los derechos reservados. Desarrollado
                 por{' '}
                 <a
                     href="https://mikadifo.com"
