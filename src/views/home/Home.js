@@ -38,7 +38,9 @@ const Home = () => {
                 de nuestros consumidores.
             </p>
             <div className="text-center">
-                <Button text={'Conócenos más'} style="link" />
+                <Link to="/conocenos">
+                    <Button text={'Conócenos más'} style="link" />
+                </Link>
             </div>
         </div>
     );
