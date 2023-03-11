@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Button.css';
 
-const Button = ({ text }) => {
+const Button = ({ text, style }) => {
     const [hover, setHover] = useState(false);
     const [active, setActive] = useState(false);
 
@@ -16,8 +16,8 @@ const Button = ({ text }) => {
             onMouseLeave={handleMouseOut}
             onMouseDown={() => setActive(true)}
             onMouseUp={handleMouseOut}
-            className={`main-button ${hover && 'button-hover'} ${
-                active && 'button-active'
+            className={`main-${style} ${hover && `${style}-hover`} ${
+                active && `${style}-active`
             }`}
         >
             {text}

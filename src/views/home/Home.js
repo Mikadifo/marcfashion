@@ -17,7 +17,7 @@ const Home = () => {
             </h2>
             <h3>Vistiendo con elegancia</h3>
             <Link to="/tienda">
-                <Button text={'Elige tu estilo'} />
+                <Button text={'Elige tu estilo'} style="button" />
             </Link>
         </div>
     );
@@ -37,7 +37,7 @@ const Home = () => {
                 ventaja sobre otras marcas para poder complacer las exigencias
                 de nuestros consumidores.
             </p>
-            <button>LINK</button>
+            <Button text={'Conócenos más'} style="link" />
         </div>
     );
 
