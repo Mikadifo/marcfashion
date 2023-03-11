@@ -3,22 +3,26 @@ import NavBar from '../../components/navbar/NavBar';
 //import Button from './../../components/button/Button';
 import homeTemp from './../../resources/imgs/home_temp.png'; //TODO: Change when get imgs
 import './Home.css';
+import './IntroSection.css';
 
 //Maybe extract the css to only this intro part, or maybe extract both as components
 const Home = () => {
     const { pathname } = useLocation();
+    const introSection = () => (
+        <div className="intro text-center">
+            <img src={homeTemp} alt="Brand_Model_Picture" />
+            <h2>
+                <span className="brand-left">MARC</span>
+                <span className="brand-right">FASHION</span>
+            </h2>
+            <h3>Vistiendo con elegancia</h3>
+            <button>Elige tu Estilo</button>
+        </div>
+    );
 
     return (
         <div data-testid="home">
-            <div className="intro text-center">
-                <img src={homeTemp} alt="Brand_Model_Picture" />
-                <h2>
-                    <span className="brand-left">MARC</span>
-                    <span className="brand-right">FASHION</span>
-                </h2>
-                <h3>Vistiendo con elegancia</h3>
-                <button>Elige tu Estilo</button>
-            </div>
+            {introSection()}
             {pathname === '/' && <NavBar />}
             <div className="home-container" data-testid="home">
                 other content

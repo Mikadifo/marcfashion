@@ -1,0 +1,101 @@
+/*Begin Tablet, 729-1024px*/
+.intro {
+  /*TODO: remove this*/
+  background-color: #ccc;
+  padding: 64px 128px 96px;
+}
+
+.intro img {
+  width: 228px;
+  height: 318px;
+  filter: drop-shadow(0px 100px 80px rgba(29, 39, 38, 0.07))
+    drop-shadow(0px 41.7776px 33.4221px rgba(29, 39, 38, 0.0503198))
+    drop-shadow(0px 22.3363px 17.869px rgba(29, 39, 38, 0.0417275))
+    drop-shadow(0px 12.5216px 10.0172px rgba(29, 39, 38, 0.035))
+    drop-shadow(0px 6.6501px 5.32008px rgba(29, 39, 38, 0.0282725))
+    drop-shadow(0px 2.76726px 2.21381px rgba(29, 39, 38, 0.0196802));
+  margin-bottom: 64px;
+}
+
+.intro h2 {
+  font-family: var(--h2-font-bold);
+  font-size: var(--h2-tablet-size);
+  line-height: var(--h2-tablet-height);
+  margin-bottom: 22px;
+}
+/*Ends Tablet, 729-1024px*/
+
+.brand-left {
+  color: rgb(var(--color-black));
+}
+
+.brand-right {
+  color: var(--color-black-50);
+}
+
+.intro h2 span {
+  display: inline-block;
+}
+
+/*Begin Tablet, 729-1024px*/
+.intro h3 {
+  background-image: var(--color-brand-gradient);
+  background-color: rgb(var(--color-secondary));
+  background-size: 100%;
+  font-family: var(--h3-font-light);
+  font-size: var(--h3-tablet-size);
+  line-height: var(--h3-tablet-height);
+  margin-bottom: 64px;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+/*Ends Tablet, 729-1024px*/
+
+/*PC, >= 1025px*/
+@media (min-width: 1025px) {
+  .intro {
+    padding: 64px 256px 128px;
+  }
+
+  .intro img {
+    width: 248px;
+    height: 358px;
+  }
+
+  .intro h2 {
+    font-size: var(--h2-size);
+    line-height: var(--h2-height);
+  }
+
+  .intro h3 {
+    font-size: var(--h3-size);
+    line-height: var(--h3-height);
+  }
+}
+
+/*MOBILE, 0-728px*/
+@media (max-width: 728px) {
+  .intro {
+    padding: 64px 64px 96px;
+  }
+
+  .intro img {
+    width: 200px;
+    height: 280px;
+    margin-bottom: 48px;
+  }
+
+  .intro h2 {
+    font-size: var(--h2-phone-size);
+    line-height: var(--h2-phone-height);
+    margin-bottom: 12px;
+  }
+
+  .intro h3 {
+    font-size: var(--h3-phone-size);
+    line-height: var(--h3-phone-height);
+    margin-bottom: 48px;
+  }
+}
