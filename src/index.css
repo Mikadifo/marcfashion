@@ -9,7 +9,6 @@ html {
   --color-primary: #2c645e;
   --color-secondary: #38a194;
   --color-brand-gradient: linear-gradient(0.25turn, #38a194, #2c645e);
-  --color-secondary-gradient: linear-gradient(0.25turn, #3490e5, #506b85);
   --color-black: 29 39 38;
   --color-black-75: rgba(29, 39, 38, 0.75);
   --color-black-50: rgba(29, 39, 38, 0.5);
