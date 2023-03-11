@@ -1,9 +1,10 @@
+/*Begin Tablet, 729-1024px*/
 .foot-info {
   padding: 96px 64px;
+  border-top: 1px solid var(--color-black-50);
   border-bottom: 1px solid var(--color-black-25);
 }
 
-/*Begin Tablet, 729-1024px*/
 .foot-info h5 {
   color: rgb(var(--color-black));
   font-size: var(--h5-tablet-size);
