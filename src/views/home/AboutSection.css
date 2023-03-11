@@ -1,0 +1,35 @@
+.about {
+  margin-bottom: 96px;
+}
+
+/*Begin Tablet, 729-1024px*/
+.about h3 {
+  color: rgb(var(--color-black));
+  font-family: var(--h3-font-bold);
+  font-size: var(--h3-tablet-size);
+  line-height: var(--h3-tablet-height);
+  margin-bottom: 56px;
+}
+/*Ends Tablet, 729-1024px*/
+
+/*PC, >= 1025px*/
+@media (min-width: 1025px) {
+  .about {
+    margin-bottom: 128px;
+  }
+
+  .about h3 {
+    font-size: var(--h3-size);
+    line-height: var(--h3-height);
+    margin-bottom: 64px;
+  }
+}
+
+/*MOBILE, 0-728px*/
+@media (max-width: 728px) {
+  .about h3 {
+    font-size: var(--h3-phone-size);
+    line-height: var(--h3-phone-height);
+    margin-bottom: 48px;
+  }
+}

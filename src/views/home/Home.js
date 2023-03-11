@@ -4,6 +4,7 @@ import Button from './../../components/button/Button';
 import homeTemp from './../../resources/imgs/home_temp.png'; //TODO: Change when get imgs
 import './Home.css';
 import './IntroSection.css';
+import './AboutSection.css';
 
 const Home = () => {
     const { pathname } = useLocation();
@@ -21,8 +22,8 @@ const Home = () => {
         </div>
     );
     const aboutSection = () => (
-        <div class="about">
-            <h3>¿Quiénes somos?</h3>
+        <div className="about">
+            <h3 className="text-center">¿Quiénes somos?</h3>
             <p>
                 Somos un grupo de sastres artesanos enfocados en la confección
                 de prendas formales para caballeros y niños, diseñamos nuestros

@@ -31,7 +31,7 @@ const NavBar = () => {
                     onClick={() => setShowMenu(!showMenu)}
                 >
                     {showMenu ? (
-                        <i class="bi bi-list-nested" />
+                        <i className="bi bi-list-nested" />
                     ) : (
                         <i className="bi bi-list" />
                     )}
