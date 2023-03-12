@@ -1,5 +1,6 @@
 import Button from '../../components/button/Button';
 import FooterHero from '../../components/footerHero/FooterHero';
+import { address } from './../../constants/texts';
 import './Contact.css';
 
 const Contact = () => {
@@ -14,7 +15,7 @@ const Contact = () => {
             ></iframe>
             <h5 className="text-start">Puedes visitarnos físicamente</h5>
             <a href="#" target="_blank" rel="noreferrer" className="text-start">
-                <p>San Pedro, Quisapincha, Ambato - Ecuador.</p>
+                <p>{address}</p>
             </a>
         </div>
     );

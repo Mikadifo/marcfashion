@@ -1,3 +1,5 @@
+import { address } from '../../constants/texts';
+
 export const footerLists = [
     {
         id: 'list-links',
@@ -57,7 +59,7 @@ export const footerLists = [
             {
                 id: 'fl-ubicacion',
                 url: '#',
-                name: 'San Pedro, Quisapincha Ambato - Ecuador.',
+                name: address,
             },
         ],
     },

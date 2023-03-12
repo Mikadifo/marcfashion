@@ -6,3 +6,4 @@ export const mision =
     'Garantizar la durabilidad de la variedad de nuestros diseños exclusivos a todos nuestros clientes además de brindar una confortabilidad y experiencia única a la altura de nuestros clientes y sus magnos eventos que solo MARCFASHION puede ofrecer.';
 export const vision =
     'Posicionarnos como una de las marcas pioneras en diseños auténticos formales para Hombres y niños utilizando la gran variedad de finos casimires que se ofertan en el extranjero y que serán importados por MARCFASHION.';
+export const address = 'San Pedro, Quisapincha, Ambato - Ecuador';
