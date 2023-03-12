@@ -3,6 +3,14 @@
   background-color: var(--color-primary);
 }
 
+.location a:hover {
+  text-decoration: underline;
+}
+
+.location a:active {
+  opacity: 0.75;
+}
+
 /*Begins Tablet, 729-1024px*/
 .contact-info {
   padding: 64px 128px 96px;
