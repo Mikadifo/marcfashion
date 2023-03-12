@@ -11,7 +11,7 @@ const FooterHero = ({ background }) => {
             </h2>
             <h3>Vistiendo con elegancia</h3>
             <Link to="/tienda">
-                <Button text={'Elige tu estilo'} style="button" />
+                <Button text={'Elige tu estilo'} type="button" />
             </Link>
         </div>
     );

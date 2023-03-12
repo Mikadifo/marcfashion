@@ -19,7 +19,7 @@ const Home = () => {
             </h2>
             <h3>Vistiendo con elegancia</h3>
             <Link to="/tienda">
-                <Button text={'Elige tu estilo'} style="button" />
+                <Button text={'Elige tu estilo'} type="button" />
             </Link>
         </div>
     );
@@ -41,7 +41,7 @@ const Home = () => {
             </p>
             <div className="text-center">
                 <Link to="/conocenos">
-                    <Button text={'Conócenos más'} style="link" />
+                    <Button text={'Conócenos más'} type="link" />
                 </Link>
             </div>
         </div>
