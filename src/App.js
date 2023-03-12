@@ -1,6 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './views/layout/Layout';
 import Home from './views/home/Home';
+import Store from './views/store/Store';
+import About from './views/about/About';
+import Contact from './views/contact/Contact';
 
 const App = () => {
     return (
@@ -8,9 +11,9 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Home />} />
-                    {/**
-                    <Route path="terapias" element={<Therapies />} />
-		    **/}
+                    <Route path="tienda" element={<Store />} />
+                    <Route path="conocenos" element={<About />} />
+                    <Route path="contacto" element={<Contact />} />
                 </Route>
             </Routes>
         </BrowserRouter>
