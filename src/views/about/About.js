@@ -16,7 +16,14 @@ const About = () => {
                             i % 2 !== 0 && 'order-lg-last'
                         }`}
                     >
-                        <h4 style={element.style}>{element.year}</h4>
+                        <h4
+                            style={element.style}
+                            className={`text-lg-${
+                                i % 2 !== 0 ? 'end' : 'start'
+                            } text-start`}
+                        >
+                            {element.year}
+                        </h4>
                     </div>
                     <div className="col">
                         <p className="text-start">{element.paragraph}</p>
