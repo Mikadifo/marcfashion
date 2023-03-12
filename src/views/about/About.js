@@ -33,14 +33,14 @@ const About = () => {
         </div>
     );
     const misionVisionSection = () => (
-        <div className="mision-vision row text-center text-sm-start">
+        <div className="mision-vision row text-start">
             <div className="col-12 col-md-6 ps-0">
                 <h3>Misión</h3>
-                <p className="text-start">{mision}</p>
+                <p>{mision}</p>
             </div>
             <div className="col-12 col-md-6 pe-0">
                 <h3>Visión</h3>
-                <p className="text-start">{vision}</p>
+                <p>{vision}</p>
             </div>
         </div>
     );
