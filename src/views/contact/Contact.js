@@ -21,25 +21,30 @@ const Contact = () => {
     const contactSection = () => (
         <div class="contact-buttons text-center">
             <h3>Contacto</h3>
-            <div className="row">
-                <h5>Llámanos o escríbenos por Whatsapp</h5>
-                <div className="col">
+            <div className="row text-center text-sm-start">
+                <h5 className="pe-0 ps-0">
+                    Llámanos o escríbenos por Whatsapp
+                </h5>
+                <div className="col-12 col-sm-6 ps-0 pe-0 pe-sm-4 pb-4 pb-sm-0">
                     <Link>
                         {/*TODO: extract this*/}
-                        <Button text={'+ 593 99 548 7770'} />
+                        <Button text={'+ 593 99 548 7770'} type="button" />
                     </Link>
                 </div>
-                <div className="col">
+                <div className="col-12 col-sm-6 p-0">
                     <Link>
-                        <Button text={'+ 593 99 684 4966'} />
+                        <Button text={'+ 593 99 684 4966'} type="button" />
                     </Link>
                 </div>
             </div>
-            <div className="row">
-                <h5>Envianos un email</h5>
-                <div className="col">
+            <div className="row text-center text-sm-start">
+                <h5 className="pe-0 ps-0">Envianos un email</h5>
+                <div className="col p-0">
                     <Link>
-                        <Button text={'alexistoala@outlook.com'} />
+                        <Button
+                            text={'alexistoala@outlook.com'}
+                            type="button"
+                        />
                     </Link>
                 </div>
             </div>

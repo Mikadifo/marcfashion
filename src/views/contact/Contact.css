@@ -15,6 +15,19 @@
   line-height: var(--h3-tablet-height);
   margin-bottom: 56px;
 }
+
+.contact-buttons .row:last-child {
+  margin-top: 28px;
+}
+
+.location h5,
+.contact-buttons h5 {
+  color: rgb(var(--color-black));
+  font-family: var(--h5-font-bold);
+  font-size: var(--h5-tablet-size);
+  line-height: var(--h5-tablet-height);
+  margin-bottom: 28px;
+}
 /*Ends Tablet, 729-1024px*/
 
 /*PC, >= 1025px*/
@@ -33,6 +46,17 @@
     line-height: var(--h3-height);
     margin-bottom: 64px;
   }
+
+  .location h5,
+  .contact-buttons h5 {
+    font-size: var(--h5-size);
+    line-height: var(--h5-height);
+    margin-bottom: 32px;
+  }
+
+  .contact-buttons .row:last-child {
+    margin-top: 32px;
+  }
 }
 
 /*MOBILE, 0-728px*/
@@ -46,5 +70,11 @@
     font-size: var(--h3-phone-size);
     line-height: var(--h3-phone-height);
     margin-bottom: 48px;
+  }
+
+  .location h5,
+  .contact-buttons h5 {
+    font-size: var(--h5-phone-size);
+    line-height: var(--h5-phone-height);
   }
 }
