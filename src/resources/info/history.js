@@ -2,10 +2,10 @@ const gradientColor = {
     backgroundImage: 'var(--color-brand-gradient)',
     backgroundColor: 'rgb(var(--color-secondary))',
     backgroundSize: '100%',
-    '-webkit-background-clip': 'text',
-    '-moz-background-clip': 'text',
-    '-webkit-text-fill-color': 'transparent',
-    '-moz-text-fill-color': 'transparent',
+    WebkitBackgroundClip: 'text',
+    MozBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    MozTextFillColor: 'transparent',
 };
 
 export const history = [
