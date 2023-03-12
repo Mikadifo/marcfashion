@@ -1,6 +1,13 @@
 import Button from '../../components/button/Button';
 import FooterHero from '../../components/footerHero/FooterHero';
-import { address } from './../../constants/texts';
+import {
+    address,
+    email,
+    primaryNumber,
+    primaryNumberURL,
+    secondaryNumber,
+    secondaryNumberURL,
+} from './../../constants/texts';
 import './Contact.css';
 
 const Contact = () => {
@@ -27,33 +34,25 @@ const Contact = () => {
                     Llámanos o escríbenos por Whatsapp
                 </h5>
                 <div className="col-12 col-sm-6 ps-0 pe-0 pe-sm-4 pb-4 pb-sm-0">
-                    <a
-                        href="https://wa.me/593995487770"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        {/*TODO: extract this*/}
-                        <Button text={'+ 593 99 548 7770'} type="button" />
+                    <a href={primaryNumberURL} target="_blank" rel="noreferrer">
+                        <Button text={primaryNumber} type="button" />
                     </a>
                 </div>
                 <div className="col-12 col-sm-6 p-0">
                     <a
-                        href="https://wa.me/593996844966"
+                        href={secondaryNumberURL}
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <Button text={'+ 593 99 684 4966'} type="button" />
+                        <Button text={secondaryNumber} type="button" />
                     </a>
                 </div>
             </div>
             <div className="row text-center text-sm-start">
                 <h5 className="pe-0 ps-0">Envianos un email</h5>
                 <div className="col p-0">
-                    <a href="mailto:alexistoala@outlook.com">
-                        <Button
-                            text={'alexistoala@outlook.com'}
-                            type="button"
-                        />
+                    <a href={`mailto:${email}`}>
+                        <Button text={email} type="button" />
                     </a>
                 </div>
             </div>
