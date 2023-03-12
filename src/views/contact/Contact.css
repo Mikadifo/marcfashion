@@ -1,3 +1,8 @@
+.contact-buttons button {
+  background-image: none;
+  background-color: var(--color-primary);
+}
+
 /*Begins Tablet, 729-1024px*/
 .contact-info {
   padding: 64px 128px 96px;
@@ -7,9 +12,12 @@
   margin-bottom: 96px;
 }
 
-.contact-buttons button {
-  background-image: none;
-  background-color: var(--color-primary);
+.location a {
+  text-decoration: none;
+  color: var(--color-black-75);
+  font-family: var(--paragraph-font);
+  font-size: var(--paragraph-tablet-size);
+  line-height: var(--paragraph-tablet-height);
 }
 
 .location h3,
@@ -45,6 +53,11 @@
     margin-bottom: 128px;
   }
 
+  .location a {
+    font-size: var(--paragraph-size);
+    line-height: var(--paragraph-height);
+  }
+
   .location h3,
   .contact-buttons h3 {
     font-size: var(--h3-size);
@@ -68,6 +81,11 @@
 @media (max-width: 728px) {
   .contact-info {
     padding: 64px 64px 96px;
+  }
+
+  .location a {
+    font-size: var(--paragraph-size);
+    line-height: var(--paragraph-height);
   }
 
   .location h3,
