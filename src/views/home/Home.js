@@ -8,6 +8,10 @@ import './Home.css';
 import './IntroSection.css';
 import './AboutSection.css';
 import './StandardsSection.css';
+import {
+    aboutFirstParagraph,
+    aboutSecondParagraph,
+} from '../../constants/texts';
 
 const Home = () => {
     const introSection = () => (
@@ -26,19 +30,8 @@ const Home = () => {
     const aboutSection = () => (
         <div className="about">
             <h3 className="text-center">¿Quiénes somos?</h3>
-            <p>
-                Somos un grupo de sastres artesanos enfocados en la confección
-                de prendas formales para caballeros y niños, diseñamos nuestros
-                trajes, abrigos, chaquetas y pantalones basados en altos
-                estándares de calidad y con la garantía de las mejores telas
-                nacionales y extranjeras.
-            </p>
-            <p className="m-0">
-                Contamos con la experiencia necesaria para crear un diseño
-                adecuado para la ocasión de nuestros clientes lo que nos da
-                ventaja sobre otras marcas para poder complacer las exigencias
-                de nuestros consumidores.
-            </p>
+            <p>{aboutFirstParagraph}</p>
+            <p className="m-0">{aboutSecondParagraph}</p>
             <div className="text-center">
                 <Link to="/conocenos">
                     <Button text={'Conócenos más'} type="link" />
