@@ -1,0 +1,48 @@
+/*Begin Tablet, 728-1024px*/
+.history {
+  padding: 64px 128px 96px;
+}
+
+.history h4 {
+  /*color: rgb(var(--color-black));*/
+  font-family: var(--h4-font-bold);
+  font-size: var(--h4-tablet-size);
+  line-height: var(--h4-tablet-height);
+}
+
+.history p {
+  margin-bottom: 56px;
+}
+/*Ends Tablet, 729-1024px*/
+
+/*PC, >= 1025px*/
+@media (min-width: 1025px) {
+  .history {
+    padding: 64px 256px 128px;
+  }
+
+  .history h4 {
+    font-size: var(--h4-size);
+    line-height: var(--h4-height);
+  }
+
+  .history p {
+    margin-bottom: 64px;
+  }
+}
+
+/*MOBILE, 0-728px*/
+@media (max-width: 728px) {
+  .history {
+    padding: 32px 64px 96px;
+  }
+
+  .history h4 {
+    font-size: var(--h4-phone-size);
+    line-height: var(--h4-phone-height);
+  }
+
+  .history p {
+    margin-bottom: 48px;
+  }
+}
