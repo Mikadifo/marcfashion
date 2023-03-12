@@ -84,6 +84,10 @@
 
 /*MOBILE, 0-728px*/
 @media (max-width: 728px) {
+  .navbar {
+    padding: 15px 32px;
+  }
+
   .nav-item > a {
     font-size: var(--paragraph-size);
     line-height: var(--paragraph-height);
