@@ -13,10 +13,10 @@ const About = () => {
                 <div className="row" key={element.id}>
                     <div
                         className={`col-12 col-lg-3 ${
-                            i % 2 != 0 && 'order-lg-last'
+                            i % 2 !== 0 && 'order-lg-last'
                         }`}
                     >
-                        <h4>{element.year}</h4>
+                        <h4 style={element.style}>{element.year}</h4>
                     </div>
                     <div className="col">
                         <p className="text-start">{element.paragraph}</p>
