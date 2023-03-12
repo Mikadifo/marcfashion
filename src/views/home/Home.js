@@ -2,16 +2,16 @@ import { Link } from 'react-router-dom';
 import NavBar from '../../components/navbar/NavBar';
 import Button from './../../components/button/Button';
 import homeTemp from './../../resources/imgs/home_temp.png'; //TODO: Change when get imgs
-import { standards } from './../../resources/info/standars';
 import FooterHero from '../../components/footerHero/FooterHero';
-import './Home.css';
-import './IntroSection.css';
-import './AboutSection.css';
-import './StandardsSection.css';
+import { standards } from './../../resources/info/standars';
 import {
     aboutFirstParagraph,
     aboutSecondParagraph,
 } from '../../constants/texts';
+import './Home.css';
+import './IntroSection.css';
+import './AboutSection.css';
+import './StandardsSection.css';
 
 const Home = () => {
     const introSection = () => (
