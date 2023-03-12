@@ -6,15 +6,16 @@ const Contact = () => {
     const locationSection = () => (
         <div className="location text-center">
             <h3>Ubicación</h3>
-            <div className="row">
-                <div className="col">MAP</div>
-                <div className="col text-start">
-                    <h5>Puedes visitarnos físicamente</h5>
-                    <a href="#" target="_blank" rel="noreferrer">
-                        <p>San Pedro, Quisapincha, Ambato - Ecuador.</p>
-                    </a>
-                </div>
-            </div>
+            {/* TODO: Change map url */}
+            <iframe
+                title="centeravid-map"
+                className="map-frame"
+                src="https://maps.google.com/maps?q=centeravid&t=&z=17&ie=UTF8&iwloc=&output=embed"
+            ></iframe>
+            <h5 className="text-start">Puedes visitarnos físicamente</h5>
+            <a href="#" target="_blank" rel="noreferrer" className="text-start">
+                <p>San Pedro, Quisapincha, Ambato - Ecuador.</p>
+            </a>
         </div>
     );
     const contactSection = () => (
