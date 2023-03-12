@@ -7,6 +7,8 @@ const NavBar = () => {
     const { pathname } = useLocation();
     const [showMenu, setShowMenu] = useState(false);
 
+    window.scrollTo({ top: 0 });
+
     return (
         <nav
             className="navbar navbar-expand-lg sticky-top"
