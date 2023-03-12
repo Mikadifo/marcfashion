@@ -7,6 +7,11 @@
   margin-bottom: 96px;
 }
 
+.contact-buttons button {
+  background-image: none;
+  background-color: var(--color-primary);
+}
+
 .location h3,
 .contact-buttons h3 {
   color: rgb(var(--color-black));
