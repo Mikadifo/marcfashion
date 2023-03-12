@@ -46,3 +46,10 @@
     margin-bottom: 48px;
   }
 }
+
+/*Custom Breakpoint of bootstrap medium*/
+@media (max-width: 991px) {
+  .history h4 {
+    padding: 0 0 16px 0;
+  }
+}
