@@ -16,7 +16,7 @@ const Contact = () => {
             <h3>Ubicación</h3>
             {/* TODO: Change map url */}
             <iframe
-                title="centeravid-map"
+                title="marcfashion-map"
                 className="map-frame"
                 src="https://maps.google.com/maps?q=centeravid&t=&z=17&ie=UTF8&iwloc=&output=embed"
             ></iframe>
@@ -27,7 +27,7 @@ const Contact = () => {
         </div>
     );
     const contactSection = () => (
-        <div class="contact-buttons text-center">
+        <div className="contact-buttons text-center">
             <h3>Contacto</h3>
             <div className="row text-center text-sm-start">
                 <h5 className="pe-0 ps-0">
