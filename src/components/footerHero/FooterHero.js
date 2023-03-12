@@ -4,7 +4,10 @@ import './FooterHero.css';
 
 const FooterHero = ({ background }) => {
     return (
-        <div className={`footer-hero text-center text-sm-start ${background}`}>
+        <div
+            className={`footer-hero text-center text-sm-start ${background}`}
+            data-testid="footer-hero"
+        >
             <h2>
                 <span className="brand-left">MARC</span>
                 <span className="brand-right">FASHION</span>
