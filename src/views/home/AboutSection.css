@@ -1,0 +1,35 @@
+.about {
+  margin: 96px 128px;
+}
+
+/*Begin Tablet, 729-1024px*/
+.about p {
+  margin-bottom: 32px;
+}
+
+.about button {
+  margin-top: 56px;
+}
+/*Ends Tablet, 729-1024px*/
+
+/*PC, >= 1025px*/
+@media (min-width: 1025px) {
+  .about {
+    margin: 128px 256px;
+  }
+
+  .about button {
+    margin-top: 64px;
+  }
+}
+
+/*MOBILE, 0-728px*/
+@media (max-width: 728px) {
+  .about {
+    margin: 96px 64px;
+  }
+
+  .about button {
+    margin-top: 48px;
+  }
+}

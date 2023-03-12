@@ -1,0 +1,47 @@
+/*Begin Tablet, 728-1024px*/
+.mision-vision {
+  background-color: var(--color-black-10);
+  padding: 96px 128px;
+}
+
+.mision-vision .col-12:first-child {
+  padding-right: 48px;
+}
+
+.mision-vision .col-12:last-child {
+  padding-left: 48px;
+}
+/*Ends Tablet, 729-1024px*/
+
+/*PC, >= 1025px*/
+@media (min-width: 1025px) {
+  .mision-vision {
+    padding: 128px 256px;
+  }
+
+  .mision-vision .col-12:first-child {
+    padding-right: 64px;
+  }
+
+  .mision-vision .col-12:last-child {
+    padding-left: 64px;
+  }
+}
+
+/*MOBILE, 0-728px*/
+@media (max-width: 728px) {
+  .mision-vision {
+    padding: 96px 64px;
+  }
+}
+
+/*Custom Breakpoint of bootstrap medium*/
+@media (max-width: 767px) {
+  .mision-vision .col-12:first-child {
+    padding: 0 0 64px 0;
+  }
+
+  .mision-vision .col-12:last-child {
+    padding: 0;
+  }
+}

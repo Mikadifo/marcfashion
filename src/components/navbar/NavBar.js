@@ -7,6 +7,8 @@ const NavBar = () => {
     const { pathname } = useLocation();
     const [showMenu, setShowMenu] = useState(false);
 
+    window.scrollTo({ top: 0 });
+
     return (
         <nav
             className="navbar navbar-expand-lg sticky-top"
@@ -31,7 +33,7 @@ const NavBar = () => {
                     onClick={() => setShowMenu(!showMenu)}
                 >
                     {showMenu ? (
-                        <i class="bi bi-list-nested" />
+                        <i className="bi bi-list-nested" />
                     ) : (
                         <i className="bi bi-list" />
                     )}
