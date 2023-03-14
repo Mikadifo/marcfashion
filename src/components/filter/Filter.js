@@ -12,26 +12,34 @@ const Filter = () => {
                 {filters.map((filter) => (
                     <div key={filter.id}>
                         <h6>{filter.title}</h6>
-                        <div className={filter.type !== 'checkbox' && 'row'}>
-                            {filter.options.map((option) => (
-                                <div
-                                    className={
-                                        filter.type !== 'checkbox' && 'col'
-                                    }
-                                >
+                        <div
+                            className={`options-container ${
+                                filter.type !== 'checkbox' && 'row'
+                            }`}
+                        >
+                            {filter.options.map((option) =>
+                                filter.type === 'checkbox' ? (
+                                    <label htmlFor={option.id} key={option.id}>
+                                        <input
+                                            className={filter.type}
+                                            type="checkbox"
+                                            id={option.id}
+                                            name={option.id}
+                                            value={option.value}
+                                        />
+                                        {option.value}
+                                    </label>
+                                ) : (
                                     <input
+                                        className={`${filter.type} col`}
                                         type="checkbox"
+                                        key={option.id}
                                         id={option.id}
                                         name={option.id}
                                         value={option.value}
                                     />
-                                    {filter.type === 'checkbox' && (
-                                        <label htmlFor={option.id}>
-                                            {option.value}
-                                        </label>
-                                    )}
-                                </div>
-                            ))}
+                                ),
+                            )}
                         </div>
                     </div>
                 ))}
