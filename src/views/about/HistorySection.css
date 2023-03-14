@@ -4,7 +4,6 @@
 }
 
 .history h4 {
-  /*color: rgb(var(--color-black));*/
   font-family: var(--h4-font-bold);
   font-size: var(--h4-tablet-size);
   line-height: var(--h4-tablet-height);

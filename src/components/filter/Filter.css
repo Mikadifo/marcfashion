@@ -12,6 +12,13 @@
   padding: 24px 32px;
   margin-top: 12px;
 }
+
+.filters-container h6 {
+  color: rgb(var(--color-black));
+  font-family: var(--h6-font-bold);
+  font-size: var(--h6-phone-size);
+  line-height: var(--h6-phone-height);
+}
 /*Ends Tablet, 729-1024px*/
 
 /*PC, >= 1025px*/
@@ -19,6 +26,11 @@
   .filters-container {
     padding: 24px 48px;
     margin-top: 16px;
+  }
+
+  .filters-container h6 {
+    font-size: var(--h6-size);
+    line-height: var(--h6-height);
   }
 }
 
