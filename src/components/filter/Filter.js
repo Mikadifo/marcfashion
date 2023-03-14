@@ -12,26 +12,27 @@ const Filter = () => {
                 {filters.map((filter) => (
                     <div key={filter.id}>
                         <h6>{filter.title}</h6>
-                        {filter.options.map((option) => (
-                            <div key={option.id}>
-                                {option.type === 'checkbox' ? (
-                                    <div>
-                                        <input
-                                            type="checkbox"
-                                            id={option.id}
-                                            name={option.id}
-                                            value={option.value}
-                                        />
+                        <div className={filter.type !== 'checkbox' && 'row'}>
+                            {filter.options.map((option) => (
+                                <div
+                                    className={
+                                        filter.type !== 'checkbox' && 'col'
+                                    }
+                                >
+                                    <input
+                                        type="checkbox"
+                                        id={option.id}
+                                        name={option.id}
+                                        value={option.value}
+                                    />
+                                    {filter.type === 'checkbox' && (
                                         <label htmlFor={option.id}>
                                             {option.value}
                                         </label>
-                                    </div>
-                                ) : (
-                                    'COLORS HERE'
-                                )}
-                                {/*TODO: add a custom check color component*/}
-                            </div>
-                        ))}
+                                    )}
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 ))}
             </div>
