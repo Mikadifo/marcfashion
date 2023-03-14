@@ -1,0 +1,19 @@
+/*Begin Tablet, 729-1024px*/
+.store {
+  padding: 64px 64px 96px;
+}
+/*Ends Tablet, 729-1024px*/
+
+/*PC, >= 1025px*/
+@media (min-width: 1025px) {
+  .store {
+    padding: 64px 128px 128px;
+  }
+}
+
+/*MOBILE, 0-728px*/
+@media (max-width: 728px) {
+  .store {
+    padding: 64px 32px 96px;
+  }
+}
