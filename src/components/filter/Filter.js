@@ -30,7 +30,7 @@ const Filter = () => {
                                         {option.value}
                                     </label>
                                 ) : (
-                                    <div className="col" key={option.id}>
+                                    <div className="col-2" key={option.id}>
                                         <input
                                             className={filter.type}
                                             style={{
