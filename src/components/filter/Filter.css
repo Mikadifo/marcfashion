@@ -10,6 +10,7 @@
 .filters-container {
   background-color: var(--color-black-05);
   padding: 24px 32px;
+  margin-top: 12px;
 }
 /*Ends Tablet, 729-1024px*/
 
@@ -17,6 +18,7 @@
 @media (min-width: 1025px) {
   .filters-container {
     padding: 24px 48px;
+    margin-top: 16px;
   }
 }
 
