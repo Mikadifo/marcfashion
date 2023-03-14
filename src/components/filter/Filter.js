@@ -30,14 +30,18 @@ const Filter = () => {
                                         {option.value}
                                     </label>
                                 ) : (
-                                    <input
-                                        className={`${filter.type} col`}
-                                        type="checkbox"
-                                        key={option.id}
-                                        id={option.id}
-                                        name={option.id}
-                                        value={option.value}
-                                    />
+                                    <div className="col" key={option.id}>
+                                        <input
+                                            className={filter.type}
+                                            style={{
+                                                backgroundColor: option.value,
+                                            }}
+                                            type="checkbox"
+                                            id={option.id}
+                                            name={option.caption}
+                                            value={option.caption}
+                                        />
+                                    </div>
                                 ),
                             )}
                         </div>
