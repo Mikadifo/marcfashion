@@ -20,10 +20,18 @@ const Store = () => {
                 />
             </div>
             <div className="row items-container">
-                <div className={`col-3 ${!showFilters && 'd-none'}`}>
+                <div
+                    className={`col-3 ${
+                        !showFilters && 'd-none'
+                    } d-none d-lg-flex`}
+                >
                     <Filter />
                 </div>
-                <div className={showFilters ? 'col-9' : 'col-12'}>
+                <div
+                    className={`${
+                        showFilters ? 'col-9' : 'col-12'
+                    } col-12 col-lg-9`}
+                >
                     <div className="row">
                         {items.map((item) => (
                             <div

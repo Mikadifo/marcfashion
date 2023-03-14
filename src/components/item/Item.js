@@ -6,7 +6,7 @@ const Item = ({ info }) => {
 
     return (
         <div
-            className={`${hover && 'item-card-hover'} item-card`}
+            className={`${hover && 'item-card-hover'} item-card mx-auto`}
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
             onMouseUp={() => setHover(false)}

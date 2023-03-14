@@ -46,4 +46,8 @@
   .filter-button button {
     padding-top: 48px;
   }
+
+  .item-list {
+    padding: 0 0 32px;
+  }
 }
