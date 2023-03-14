@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Button.css';
 
-const Button = ({ text, type }) => {
+const Button = ({ text, type, action }) => {
     const [hover, setHover] = useState(false);
     const [active, setActive] = useState(false);
 
@@ -16,6 +16,7 @@ const Button = ({ text, type }) => {
             onMouseLeave={handleMouseOut}
             onMouseDown={() => setActive(true)}
             onMouseUp={handleMouseOut}
+            onClick={action}
             className={`main-${type} ${hover && `${type}-hover`} ${
                 active && `${type}-active`
             }`}
