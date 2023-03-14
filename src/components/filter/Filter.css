@@ -1,0 +1,25 @@
+.filter-button button {
+  background-image: none;
+  background-color: rgb(var(--color-black));
+}
+
+.filter-button button::before {
+  background: rgb(var(--color-black));
+}
+/*Begin Tablet, 729-1024px*/
+.filters-container {
+  background-color: var(--color-black-05);
+  padding: 24px 32px;
+}
+/*Ends Tablet, 729-1024px*/
+
+/*PC, >= 1025px*/
+@media (min-width: 1025px) {
+  .filters-container {
+    padding: 24px 48px;
+  }
+}
+
+/*MOBILE, 0-728px*/
+@media (max-width: 728px) {
+}
