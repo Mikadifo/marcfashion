@@ -5,6 +5,9 @@ const Store = () => {
     return (
         <div className="store" data-testid="store">
             <Search />
+            {/*
+	      TODO: top padding goes on the next div
+	    */}
             STORE
         </div>
     );
