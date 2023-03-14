@@ -1,6 +1,8 @@
 import Button from '../../components/button/Button';
 import Filter from '../../components/filter/Filter';
+import Item from '../../components/item/Item';
 import Search from '../../components/search/Search';
+import { items } from './../../resources/info/items';
 import './Store.css';
 
 const Store = () => {
@@ -14,7 +16,15 @@ const Store = () => {
                 <div className="col-3">
                     <Filter />
                 </div>
-                <div className="col-9">ITEMS</div>
+                <div className="col-9">
+                    <div className="row">
+                        {items.map((item) => (
+                            <div className="col" key={item.id}>
+                                <Item info={item} />
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </div>
         </div>
     );
