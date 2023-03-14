@@ -19,7 +19,10 @@ const Store = () => {
                 <div className="col-9">
                     <div className="row">
                         {items.map((item) => (
-                            <div className="col" key={item.id}>
+                            <div
+                                className="col-xxl-auto col item-list"
+                                key={item.id}
+                            >
                                 <Item info={item} />
                             </div>
                         ))}

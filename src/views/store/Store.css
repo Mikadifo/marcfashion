@@ -16,6 +16,10 @@
 .items-container {
   padding-top: 16px;
 }
+
+.item-list {
+  padding: 0 0 32px 32px;
+}
 /*Ends Tablet, 729-1024px*/
 
 /*PC, >= 1025px*/
@@ -26,6 +30,10 @@
 
   .filter-button button {
     padding-top: 64px;
+  }
+
+  .item-list {
+    padding: 0 0 64px 64px;
   }
 }
 
