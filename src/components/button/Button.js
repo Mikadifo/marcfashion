@@ -1,7 +1,14 @@
 import { useState } from 'react';
 import './Button.css';
 
-const Button = ({ text, type, action, modalToggle, modalTarget }) => {
+const Button = ({
+    text,
+    type,
+    action,
+    modalToggle,
+    modalTarget,
+    modalCloser,
+}) => {
     const [hover, setHover] = useState(false);
     const [active, setActive] = useState(false);
 
@@ -13,6 +20,7 @@ const Button = ({ text, type, action, modalToggle, modalTarget }) => {
     return (
         <button
             data-bs-toggle={modalToggle && 'modal'}
+            data-bs-dismiss={modalCloser && 'modal'}
             data-bs-target={modalTarget}
             onMouseEnter={() => setHover(true)}
             onMouseLeave={handleMouseOut}

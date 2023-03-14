@@ -34,7 +34,7 @@ const Store = () => {
                     type="link"
                     action={() => setShowFilters(!showFilters)}
                     modalToggle={screenWidth < 992}
-                    modalTarget="#exampleModal"
+                    modalTarget="#filter-modal"
                 />
             </div>
             <div className="row items-container">
@@ -62,34 +62,31 @@ const Store = () => {
             </div>
             <div
                 className="modal fade"
-                id="exampleModal"
+                id="filter-modal"
                 tabIndex="-1"
-                aria-labelledby="exampleModalLabel"
+                aria-labelledby="filter-modal-label"
                 aria-hidden="true"
             >
                 <div className="modal-dialog modal-fullscreen">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title">Modal title</h5>
+                            <h5 className="modal-title">Filtros</h5>
                             <button
                                 type="button"
                                 className="btn-close"
                                 data-bs-dismiss="modal"
                                 aria-label="Close"
-                            ></button>
+                            />
                         </div>
                         <div className="modal-body">
-                            <p>Modal body text goes here.</p>
+                            <Filter />
                         </div>
                         <div className="modal-footer">
-                            <button
+                            <Button
+                                text="Aplicar"
                                 type="button"
-                                className="btn btn-secondary"
-                                data-bs-dismiss="modal"
-                            >
-                                Close
-                            </button>
-                            <Button text="Aplicar" type="button" />
+                                modalCloser={true}
+                            />
                         </div>
                     </div>
                 </div>
