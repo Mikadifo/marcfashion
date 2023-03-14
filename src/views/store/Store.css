@@ -2,6 +2,16 @@
   background: rgb(var(--color-black));
 }
 
+.filters-small {
+  /*background-color: red;*/
+  /*min-width: 100vw;*/
+  /*min-height: 100vh;*/
+  /*height: auto;*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 0;*/
+}
+
 /*Begin Tablet, 729-1024px*/
 .store {
   padding: 64px 64px 96px;
