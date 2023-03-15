@@ -4,7 +4,7 @@ import './Filter.css';
 const Filter = () => {
     return (
         <div>
-            <div className="filters-container">
+            <div className="filters-container" data-testid="filters-container">
                 {filters.map((filter) => (
                     <div key={filter.id}>
                         <h6>{filter.title}</h6>
