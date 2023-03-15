@@ -18,18 +18,23 @@ const ItemView = () => {
         getItem();
     }, [itemId]);
 
-    const itemIsEmpty = () => Object.keys(item).length === 0;
+    const itemIsEmpty = () => !item || Object.keys(item).length === 0;
 
     return (
         <div className="item-view" data-testid="item-view">
             <Search />
             <div className="item-info">
-                {!itemIsEmpty && <h1>Cargando Producto...</h1>}
-                ITEM ({itemId}) PREVIEW: NAME:{item.name}
+                {itemIsEmpty() ? (
+                    <h1>Cargando Producto...</h1>
+                ) : (
+                    <>
+                        ITEM ({itemId}) PREVIEW: NAME:{item.name}
+                    </>
+                )}
             </div>
             <hr />
             <div className="item-descprition">
-                {itemIsEmpty | !item.descprition ? (
+                {itemIsEmpty() || !item.descprition ? (
                     <h1>Cargando Producto...</h1>
                 ) : (
                     item.descprition.map((section, i) => (
