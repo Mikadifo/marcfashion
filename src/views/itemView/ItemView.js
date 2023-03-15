@@ -8,25 +8,38 @@ const ItemView = () => {
     const { itemId } = useParams();
     const [item, setItem] = useState({});
 
-    //TODO: THIS SHOULD GET ITEM FROM A QUERY
-    const getItem = () => {
-        console.log('Getting item...');
-        setItem(items.filter((element) => element.id === itemId)[0]);
-    };
-
     useEffect(() => {
+        //TODO: THIS SHOULD GET ITEM FROM A QUERY
+        const getItem = () => {
+            console.log('Getting item...');
+            setItem(items.filter((element) => element.id === itemId)[0]);
+        };
         console.log('Use effect');
         getItem();
-    }, []);
+    }, [itemId]);
+
+    const itemIsEmpty = () => Object.keys(item).length === 0;
 
     return (
         <div className="item-view" data-testid="item-view">
             <Search />
             <div className="item-info">
+                {!itemIsEmpty && <h1>Cargando Producto...</h1>}
                 ITEM ({itemId}) PREVIEW: NAME:{item.name}
             </div>
             <hr />
-            <div className="item-descprition">Descprition</div>
+            <div className="item-descprition">
+                {itemIsEmpty | !item.descprition ? (
+                    <h1>Cargando Producto...</h1>
+                ) : (
+                    item.descprition.map((section) => (
+                        <div key={section.id}>
+                            <h5>{section.title}</h5>
+                            <p>{section.content}</p>
+                        </div>
+                    ))
+                )}
+            </div>
         </div>
     );
 };
