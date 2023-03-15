@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Search from '../../components/search/Search';
+import ItemViewer from '../../components/itemViewer/ItemViewer';
 import { items } from './../../resources/info/items'; //TODO: NOT USE THIS, IT SHOULD COME FROM A FIREBASE QUERY to get byID
 import './ItemView.css';
 
@@ -28,6 +29,8 @@ const ItemView = () => {
                     <h1>Cargando Producto...</h1>
                 ) : (
                     <>
+                        {/*TODO:IMG WILL COME AS AN ARRAY, so change this*/}
+                        <ItemViewer imgs={[item.img]} />
                         ITEM ({itemId}) PREVIEW: NAME:{item.name}
                     </>
                 )}
