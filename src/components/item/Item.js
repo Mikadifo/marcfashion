@@ -10,6 +10,7 @@ const Item = ({ info }) => {
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
             onMouseUp={() => setHover(false)}
+            data-testid={info.id}
         >
             <img src={info.img} alt={info.name} />
             <p>{info.name}</p>

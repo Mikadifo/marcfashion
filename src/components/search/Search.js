@@ -3,7 +3,7 @@ import './Search.css';
 
 const Search = () => {
     return (
-        <div className="search text-center">
+        <div className="search text-center" data-testid="search">
             <h3>Elige tu estilo</h3>
             <form className="row search-bar">
                 <div className="col-12 col-md-10">
