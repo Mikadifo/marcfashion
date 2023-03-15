@@ -45,9 +45,7 @@ const Store = () => {
                 >
                     <Filter />
                 </div>
-                <div
-                    className={`${showFilters ? 'col-12 col-lg-9' : 'col-12'}`}
-                >
+                <div className={showFilters ? 'col-12 col-lg-9' : 'col-12'}>
                     <div className="row">
                         {items.map((item) => (
                             <div

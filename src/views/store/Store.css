@@ -10,7 +10,7 @@
 .filter-button button {
   background-image: none;
   background-color: rgb(var(--color-black));
-  padding-top: 56px;
+  margin-top: 56px;
 }
 
 .items-container {
@@ -29,7 +29,7 @@
   }
 
   .filter-button button {
-    padding-top: 64px;
+    margin-top: 64px;
   }
 
   .item-list {
@@ -44,7 +44,7 @@
   }
 
   .filter-button button {
-    padding-top: 48px;
+    margin-top: 48px;
   }
 
   .item-list {
