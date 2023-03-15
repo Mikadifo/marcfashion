@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Search from '../../components/search/Search';
 import { items } from './../../resources/info/items'; //TODO: NOT USE THIS, IT SHOULD COME FROM A FIREBASE QUERY to get byID
+import './ItemView.css';
 
 const ItemView = () => {
     const { itemId } = useParams();
@@ -18,8 +20,13 @@ const ItemView = () => {
     }, []);
 
     return (
-        <div>
-            ITEM ({itemId}) PREVIEW: NAME:{item.name}
+        <div className="item-view" data-testid="item-view">
+            <Search />
+            <div className="item-info">
+                ITEM ({itemId}) PREVIEW: NAME:{item.name}
+            </div>
+            <hr />
+            <div className="item-descprition">Descprition</div>
         </div>
     );
 };

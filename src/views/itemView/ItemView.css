@@ -1,10 +1,43 @@
 /*Begin Mobile&Tablet, 0-1024px*/
+.item-view {
+  padding: 64px 64px 96px;
+}
+
+.item-info {
+  margin-top: 56px;
+}
+
+.item-view hr {
+  margin: 56px 0;
+}
 /*Ends Mobile&Tablet, 0-1024px*/
 
 /*PC, >= 1025px*/
 @media (min-width: 1025px) {
+  .item-view {
+    padding: 64px 128px 128px;
+  }
+
+  .item-info {
+    margin-top: 64px;
+  }
+
+  .item-view hr {
+    margin: 64px 0;
+  }
 }
 
 /*MOBILE, 0-728px*/
 @media (max-width: 728px) {
+  .item-view {
+    padding: 64px 32px 96px;
+  }
+
+  .item-info {
+    margin-top: 48px;
+  }
+
+  .item-view hr {
+    margin: 48px 0;
+  }
 }
