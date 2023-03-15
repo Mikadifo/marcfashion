@@ -32,10 +32,18 @@ const ItemView = () => {
                 {itemIsEmpty | !item.descprition ? (
                     <h1>Cargando Producto...</h1>
                 ) : (
-                    item.descprition.map((section) => (
+                    item.descprition.map((section, i) => (
                         <div key={section.id}>
                             <h5>{section.title}</h5>
-                            <p>{section.content}</p>
+                            <p
+                                className={
+                                    i === item.descprition.length - 1
+                                        ? 'mb-0'
+                                        : ''
+                                }
+                            >
+                                {section.content}
+                            </p>
                         </div>
                     ))
                 )}
