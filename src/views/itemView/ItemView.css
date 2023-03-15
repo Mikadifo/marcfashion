@@ -1,0 +1,10 @@
+/*Begin Mobile&Tablet, 0-1024px*/
+/*Ends Mobile&Tablet, 0-1024px*/
+
+/*PC, >= 1025px*/
+@media (min-width: 1025px) {
+}
+
+/*MOBILE, 0-728px*/
+@media (max-width: 728px) {
+}

@@ -4,6 +4,7 @@ import Home from './views/home/Home';
 import Store from './views/store/Store';
 import About from './views/about/About';
 import Contact from './views/contact/Contact';
+import ItemView from './views/itemView/ItemView';
 
 const App = () => {
     return (
@@ -12,6 +13,7 @@ const App = () => {
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Home />} />
                     <Route path="tienda" element={<Store />} />
+                    <Route path="tienda/:itemId" element={<ItemView />} />
                     <Route path="conocenos" element={<About />} />
                     <Route path="contacto" element={<Contact />} />
                 </Route>
