@@ -16,8 +16,13 @@ export const items = [
             {
                 id: 'buy_steps',
                 title: 'Instrucciones de compra',
-                content:
-                    '1.Elije el tipo de tela, tallas, color y cantidad que desees\n2.Presiona Comprar\n3.Presiona continuar en el link de Whatsapp\n4.Envía el mensaje escrito automáticamente, puedes agregar lo que quieras, pero recuerda no borrar ninguna parte del mensaje ya que eso sirve como referencia para nuestros asistentes\n5.Espera una respuesta y confirmación de uno de nuestros asistentes, ellos lo guiarán a través del proceso de pago',
+                type: 'list',
+                content: [
+                    'Elije el tipo de tela',
+                    'Ejmplo list 2',
+                    'Ejepmlo list 3',
+                    'Ejemplo lista 4',
+                ],
             },
             {
                 id: 'custom_questions',
@@ -42,8 +47,13 @@ export const items = [
             {
                 id: 'buy_steps',
                 title: 'Instrucciones de compra',
-                content:
-                    '1.Elije el tipo de tela, tallas, color y cantidad que desees\n2.Presiona Comprar\n3.Presiona continuar en el link de Whatsapp\n4.Envía el mensaje escrito automáticamente, puedes agregar lo que quieras, pero recuerda no borrar ninguna parte del mensaje ya que eso sirve como referencia para nuestros asistentes\n5.Espera una respuesta y confirmación de uno de nuestros asistentes, ellos lo guiarán a través del proceso de pago',
+                type: 'list',
+                content: [
+                    'Elije el tipo de tela',
+                    'Ejmplo list 2',
+                    'Ejepmlo list 3',
+                    'Ejemplo lista 4',
+                ],
             },
             {
                 id: 'custom_questions',
@@ -68,8 +78,13 @@ export const items = [
             {
                 id: 'buy_steps',
                 title: 'Instrucciones de compra',
-                content:
-                    '1.Elije el tipo de tela, tallas, color y cantidad que desees\n2.Presiona Comprar\n3.Presiona continuar en el link de Whatsapp\n4.Envía el mensaje escrito automáticamente, puedes agregar lo que quieras, pero recuerda no borrar ninguna parte del mensaje ya que eso sirve como referencia para nuestros asistentes\n5.Espera una respuesta y confirmación de uno de nuestros asistentes, ellos lo guiarán a través del proceso de pago',
+                type: 'list',
+                content: [
+                    'Elije el tipo de tela',
+                    'Ejmplo list 2',
+                    'Ejepmlo list 3',
+                    'Ejemplo lista 4',
+                ],
             },
             {
                 id: 'custom_questions',
@@ -94,8 +109,13 @@ export const items = [
             {
                 id: 'buy_steps',
                 title: 'Instrucciones de compra',
-                content:
-                    '1.Elije el tipo de tela, tallas, color y cantidad que desees\n2.Presiona Comprar\n3.Presiona continuar en el link de Whatsapp\n4.Envía el mensaje escrito automáticamente, puedes agregar lo que quieras, pero recuerda no borrar ninguna parte del mensaje ya que eso sirve como referencia para nuestros asistentes\n5.Espera una respuesta y confirmación de uno de nuestros asistentes, ellos lo guiarán a través del proceso de pago',
+                type: 'list',
+                content: [
+                    'Elije el tipo de tela',
+                    'Ejmplo list 2',
+                    'Ejepmlo list 3',
+                    'Ejemplo lista 4',
+                ],
             },
             {
                 id: 'custom_questions',
@@ -120,8 +140,13 @@ export const items = [
             {
                 id: 'buy_steps',
                 title: 'Instrucciones de compra',
-                content:
-                    '1.Elije el tipo de tela, tallas, color y cantidad que desees\n2.Presiona Comprar\n3.Presiona continuar en el link de Whatsapp\n4.Envía el mensaje escrito automáticamente, puedes agregar lo que quieras, pero recuerda no borrar ninguna parte del mensaje ya que eso sirve como referencia para nuestros asistentes\n5.Espera una respuesta y confirmación de uno de nuestros asistentes, ellos lo guiarán a través del proceso de pago',
+                type: 'list',
+                content: [
+                    'Elije el tipo de tela',
+                    'Ejmplo list 2',
+                    'Ejepmlo list 3',
+                    'Ejemplo lista 4',
+                ],
             },
             {
                 id: 'custom_questions',
@@ -146,8 +171,13 @@ export const items = [
             {
                 id: 'buy_steps',
                 title: 'Instrucciones de compra',
-                content:
-                    '1.Elije el tipo de tela, tallas, color y cantidad que desees\n2.Presiona Comprar\n3.Presiona continuar en el link de Whatsapp\n4.Envía el mensaje escrito automáticamente, puedes agregar lo que quieras, pero recuerda no borrar ninguna parte del mensaje ya que eso sirve como referencia para nuestros asistentes\n5.Espera una respuesta y confirmación de uno de nuestros asistentes, ellos lo guiarán a través del proceso de pago',
+                type: 'list',
+                content: [
+                    'Elije el tipo de tela',
+                    'Ejmplo list 2',
+                    'Ejepmlo list 3',
+                    'Ejemplo lista 4',
+                ],
             },
             {
                 id: 'custom_questions',
@@ -172,8 +202,13 @@ export const items = [
             {
                 id: 'buy_steps',
                 title: 'Instrucciones de compra',
-                content:
-                    '1.Elije el tipo de tela, tallas, color y cantidad que desees\n2.Presiona Comprar\n3.Presiona continuar en el link de Whatsapp\n4.Envía el mensaje escrito automáticamente, puedes agregar lo que quieras, pero recuerda no borrar ninguna parte del mensaje ya que eso sirve como referencia para nuestros asistentes\n5.Espera una respuesta y confirmación de uno de nuestros asistentes, ellos lo guiarán a través del proceso de pago',
+                type: 'list',
+                content: [
+                    'Elije el tipo de tela',
+                    'Ejmplo list 2',
+                    'Ejepmlo list 3',
+                    'Ejemplo lista 4',
+                ],
             },
             {
                 id: 'custom_questions',
@@ -198,8 +233,13 @@ export const items = [
             {
                 id: 'buy_steps',
                 title: 'Instrucciones de compra',
-                content:
-                    '1.Elije el tipo de tela, tallas, color y cantidad que desees\n2.Presiona Comprar\n3.Presiona continuar en el link de Whatsapp\n4.Envía el mensaje escrito automáticamente, puedes agregar lo que quieras, pero recuerda no borrar ninguna parte del mensaje ya que eso sirve como referencia para nuestros asistentes\n5.Espera una respuesta y confirmación de uno de nuestros asistentes, ellos lo guiarán a través del proceso de pago',
+                type: 'list',
+                content: [
+                    'Elije el tipo de tela',
+                    'Ejmplo list 2',
+                    'Ejepmlo list 3',
+                    'Ejemplo lista 4',
+                ],
             },
             {
                 id: 'custom_questions',
@@ -224,8 +264,13 @@ export const items = [
             {
                 id: 'buy_steps',
                 title: 'Instrucciones de compra',
-                content:
-                    '1.Elije el tipo de tela, tallas, color y cantidad que desees\n2.Presiona Comprar\n3.Presiona continuar en el link de Whatsapp\n4.Envía el mensaje escrito automáticamente, puedes agregar lo que quieras, pero recuerda no borrar ninguna parte del mensaje ya que eso sirve como referencia para nuestros asistentes\n5.Espera una respuesta y confirmación de uno de nuestros asistentes, ellos lo guiarán a través del proceso de pago',
+                type: 'list',
+                content: [
+                    'Elije el tipo de tela',
+                    'Ejmplo list 2',
+                    'Ejepmlo list 3',
+                    'Ejemplo lista 4',
+                ],
             },
             {
                 id: 'custom_questions',

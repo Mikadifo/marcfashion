@@ -18,7 +18,8 @@
   line-height: var(--h5-tablet-height);
 }
 
-.item-view p {
+.item-view p,
+.item-view li {
   color: var(--color-black-75);
   font-family: var(--paragraph-font);
   font-size: var(--paragraph-tablet-size);
@@ -46,7 +47,8 @@
     line-height: var(--h5-height);
   }
 
-  .item-view p {
+  .item-view p,
+  .item-view li {
     font-size: var(--paragraph-size);
     line-height: var(--paragraph-height);
   }
@@ -71,7 +73,8 @@
     line-height: var(--h5-phone-height);
   }
 
-  .item-view p {
+  .item-view p,
+  .item-view li {
     font-size: var(--paragraph-size);
     line-height: var(--paragraph-height);
   }

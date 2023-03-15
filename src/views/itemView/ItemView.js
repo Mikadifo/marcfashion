@@ -35,15 +35,34 @@ const ItemView = () => {
                     item.descprition.map((section, i) => (
                         <div key={section.id}>
                             <h5>{section.title}</h5>
-                            <p
-                                className={
-                                    i === item.descprition.length - 1
-                                        ? 'mb-0'
-                                        : ''
-                                }
-                            >
-                                {section.content}
-                            </p>
+                            {section.type === 'list' ? (
+                                <ol>
+                                    {section.content.map((listItem, j) => (
+                                        <li className="mb-0" key={j}>
+                                            <p
+                                                className={
+                                                    j ===
+                                                    section.content.length - 1
+                                                        ? ''
+                                                        : 'mb-3'
+                                                }
+                                            >
+                                                {listItem}
+                                            </p>
+                                        </li>
+                                    ))}
+                                </ol>
+                            ) : (
+                                <p
+                                    className={
+                                        i === item.descprition.length - 1
+                                            ? 'mb-0'
+                                            : ''
+                                    }
+                                >
+                                    {section.content}
+                                </p>
+                            )}
                         </div>
                     ))
                 )}
