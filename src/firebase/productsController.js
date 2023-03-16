@@ -5,14 +5,16 @@ const productsRef = collection(db, 'products');
 
 //const q = query(productsRef, where());
 
-export const getAllProducts = async () => {
+export const getAllProductNames = async () => {
     try {
 	const querySnapshot = await getDocs(productsRef);
         if (querySnapshot.docs.length > 0) {
-            return querySnapshot.docs.map((doc) => doc.data());
+            return querySnapshot.docs.map((doc) => ({
+                ...doc.data(),
+                id: doc.id,
+            }));
         }
     } catch (error) {
         console.log('Error fetching products. Try reloading the page.');
-        /* handle error */
     }
 };

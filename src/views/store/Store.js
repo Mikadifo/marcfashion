@@ -3,8 +3,7 @@ import Button from '../../components/button/Button';
 import Filter from '../../components/filter/Filter';
 import Item from '../../components/item/Item';
 import Search from '../../components/search/Search';
-import { items } from './../../resources/info/items';
-import { getAllProducts } from '../../firebase/productsController';
+import { getAllProductNames } from '../../firebase/productsController';
 import './Store.css';
 
 const Store = () => {
@@ -18,12 +17,13 @@ const Store = () => {
 
     const getProducts = async () => {
         console.log('Fetching Products...');
-        setProducts(await getAllProducts());
+        setProducts(await getAllProductNames());
+        console.log(products);
     };
 
     useEffect(() => {
         window.addEventListener('resize', updateScreenSize);
-        //getProducts();
+        getProducts();
         return () => {
             window.removeEventListener('resize', updateScreenSize);
         };
@@ -58,12 +58,12 @@ const Store = () => {
                         {products.length === 0 ? (
                             <h1>Cargando Productos...</h1>
                         ) : (
-                            items.map((item) => (
+                            products.map((product) => (
                                 <div
                                     className="col-xxl-auto col item-list"
-                                    key={item.id}
+                                    key={product.id}
                                 >
-                                    <Item info={item} />
+                                    <Item info={product} />
                                 </div>
                             ))
                         )}

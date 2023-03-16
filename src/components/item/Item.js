@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Item.css';
 
-//TODO: Take the price from lowest price by fabric
+//TODO: Take the price from lowest price
 const Item = ({ info }) => {
     const [hover, setHover] = useState(false);
     const navigate = useNavigate();
@@ -16,9 +16,9 @@ const Item = ({ info }) => {
             onClick={() => navigate(`/tienda/${info.id}`)}
             data-testid={info.id}
         >
-            <img src={info.img} alt={info.name} />
+            <img src={info.imgs[0]} alt={info.name} />
             <p>{info.name}</p>
-            <h5>{info.price}</h5>
+            <h5>TODO$</h5>
         </div>
     );
 };
