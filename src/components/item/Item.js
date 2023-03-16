@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Item.css';
 
+//TODO: Take the price from lowest price by fabric
 const Item = ({ info }) => {
     const [hover, setHover] = useState(false);
     const navigate = useNavigate();

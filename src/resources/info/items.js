@@ -4,9 +4,17 @@ export const items = [
     {
         id: 'example_item_1',
         img: 'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-        name: 'Example Item Temp',
+        name: 'Example Item Temp', //not included
         price: '$50.99',
+        colors: ['id_color_1', 'id_color_2'], //own collection
+        size: 'XL',
+        imgs: [],
+        fabrics: [
+            { id: 'fab_nacional', price: '50.99', name: 'Tela Nacional' },
+            { id: 'fab_import', price: '60.99', name: 'Tela Importada' },
+        ],
         descprition: [
+            //own collection, [id1, id2, id3]
             {
                 id: 'gen_desc',
                 title: 'Descripción',
