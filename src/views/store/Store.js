@@ -4,18 +4,26 @@ import Filter from '../../components/filter/Filter';
 import Item from '../../components/item/Item';
 import Search from '../../components/search/Search';
 import { items } from './../../resources/info/items';
+import { getAllProducts } from '../../firebase/productsController';
 import './Store.css';
 
 const Store = () => {
     const [showFilters, setShowFilters] = useState(true);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    const [products, setProducts] = useState([]);
 
     const updateScreenSize = () => {
         setScreenWidth(window.innerWidth);
     };
 
+    const getProducts = async () => {
+        console.log('Fetching Products...');
+        setProducts(await getAllProducts());
+    };
+
     useEffect(() => {
         window.addEventListener('resize', updateScreenSize);
+        //getProducts();
         return () => {
             window.removeEventListener('resize', updateScreenSize);
         };
@@ -47,14 +55,18 @@ const Store = () => {
                 </div>
                 <div className={showFilters ? 'col-12 col-lg-9' : 'col-12'}>
                     <div className="row">
-                        {items.map((item) => (
-                            <div
-                                className="col-xxl-auto col item-list"
-                                key={item.id}
-                            >
-                                <Item info={item} />
-                            </div>
-                        ))}
+                        {products.length === 0 ? (
+                            <h1>Cargando Productos...</h1>
+                        ) : (
+                            items.map((item) => (
+                                <div
+                                    className="col-xxl-auto col item-list"
+                                    key={item.id}
+                                >
+                                    <Item info={item} />
+                                </div>
+                            ))
+                        )}
                     </div>
                 </div>
             </div>
