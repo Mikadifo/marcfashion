@@ -6,6 +6,7 @@ import ItemOptions from '../../components/itemOptions/ItemOptions';
 import { items as products } from './../../resources/info/items';
 import { getDescriptionsByIds } from '../../firebase/descriptionsController';
 import Description from '../../components/description/Description';
+import Button from '../../components/button/Button';
 import './ItemView.css';
 
 const ItemView = () => {
@@ -64,6 +65,16 @@ const ItemView = () => {
                             </div>
                             <div className="col-lg-5 col-xl-6 col-xxl-4 ps-lg-5 ps-xxl-0">
                                 <ItemOptions options={getItemOptions()} />
+                            </div>
+                        </div>
+                        <div>
+                            <div className="row pt-5">
+                                <div className="col-12 col-sm-8 col-lg-10 text-center text-sm-end my-auto">
+                                    <h4 className="mb-3 m-sm-0">$ PRI.CE</h4>
+                                </div>
+                                <div className="col-12 col-sm-4 col-lg-2 text-center">
+                                    <Button text="Comprar" type="button" />
+                                </div>
                             </div>
                         </div>
                     </div>
