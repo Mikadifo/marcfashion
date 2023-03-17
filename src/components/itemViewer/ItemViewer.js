@@ -4,7 +4,7 @@ const ItemViewer = ({ imgs }) => {
     return (
         <div
             id="itemCarousel"
-            className="carousel slide"
+            className="carousel slide item-viewer"
             data-bs-interval="false"
         >
             <div className="carousel-indicators">
@@ -26,11 +26,7 @@ const ItemViewer = ({ imgs }) => {
                         className={`carousel-item ${i === 0 && 'active'}`}
                         key={i}
                     >
-                        <img
-                            src={img}
-                            className="d-block w-100"
-                            alt={`Product img ${i}`}
-                        />
+                        <img src={img} alt={`Product img ${i}`} />
                     </div>
                 ))}
             </div>

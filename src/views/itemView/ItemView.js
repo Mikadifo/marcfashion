@@ -59,10 +59,10 @@ const ItemView = () => {
                     <div className="text-center">
                         <h4>{state.item.name}</h4>
                         <div className="row">
-                            <div className="col-6">
+                            <div className="col-7">
                                 <ItemViewer imgs={state.item.imgs} />
                             </div>
-                            <div className="col-6">
+                            <div className="col-5">
                                 <ItemOptions options={getItemOptions()} />
                             </div>
                         </div>

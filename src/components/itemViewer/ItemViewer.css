@@ -1,0 +1,28 @@
+.item-viewer img {
+  object-fit: cover;
+}
+
+/*Begin Tablet, 729-1024px*/
+.item-viewer,
+.item-viewer img {
+  width: 400px;
+  height: 400px;
+}
+/*End Tablet, 729-1024px*/
+
+/*PC, >= 1025px*/
+@media (min-width: 1025px) {
+  .item-viewer,
+  .item-viewer img {
+    width: 480px;
+    height: 480px;
+  }
+}
+
+/*MOBILE, 0-728px*/
+@media (max-width: 728px) {
+  .item-viewer,
+  .item-viewer img {
+    width: 100%;
+  }
+}
