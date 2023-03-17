@@ -56,9 +56,16 @@ const ItemView = () => {
             <div className="item-info">
                 {state.loading && <h1>Cargando Producto...</h1>}
                 {!state.loading && state.error.length === 0 ? (
-                    <div>
-                        <ItemViewer imgs={state.item.imgs} />
-                        <ItemOptions options={getItemOptions()} />
+                    <div className="text-center">
+                        <h4>{state.item.name}</h4>
+                        <div className="row">
+                            <div className="col-6">
+                                <ItemViewer imgs={state.item.imgs} />
+                            </div>
+                            <div className="col-6">
+                                <ItemOptions options={getItemOptions()} />
+                            </div>
+                        </div>
                     </div>
                 ) : (
                     <h1>{state.error}</h1>

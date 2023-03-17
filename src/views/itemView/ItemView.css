@@ -10,6 +10,14 @@
 .item-view hr {
   margin: 56px 0;
 }
+
+.item-view h4 {
+  color: rgb(var(--color-black));
+  font-family: var(--h4-font-bold);
+  font-size: var(--h4-tablet-size);
+  line-height: var(--h4-tablet-height);
+  margin-bottom: 48px;
+}
 /*Ends Mobile&Tablet, 0-1024px*/
 
 /*PC, >= 1025px*/
@@ -25,6 +33,11 @@
   .item-view hr {
     margin: 64px 0;
   }
+
+  .item-view h4 {
+    font-size: var(--h4-size);
+    line-height: var(--h4-height);
+  }
 }
 
 /*MOBILE, 0-728px*/
@@ -39,5 +52,10 @@
 
   .item-view hr {
     margin: 48px 0;
+  }
+
+  .item-view h4 {
+    font-size: var(--h4-phone-size);
+    line-height: var(--h4-phone-height);
   }
 }
