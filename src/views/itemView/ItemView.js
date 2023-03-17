@@ -41,7 +41,7 @@ const ItemView = () => {
                 price: result.price,
             }));
         }
-    }, [selectedOptions]);
+    }, [selectedOptions, state.item.category]);
 
     useEffect(() => {
         const getItem = () => {

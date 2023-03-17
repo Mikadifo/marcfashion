@@ -8,12 +8,13 @@ const ItemOptions = ({ options, setOptions }) => {
     const [color, setColor] = useState(options.colors[0]);
 
     useEffect(() => {
+        console.log('Render IOPTIONS');
         setOptions({
             size,
             color,
             fabric,
         });
-    }, [fabric, size, color]);
+    }, [fabric, size, color, setOptions]);
 
     return (
         <div className="select-options-container">
