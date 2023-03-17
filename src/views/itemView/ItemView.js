@@ -4,8 +4,9 @@ import Search from '../../components/search/Search';
 import ItemViewer from '../../components/itemViewer/ItemViewer';
 import ItemOptions from '../../components/itemOptions/ItemOptions';
 import { items as products } from './../../resources/info/items';
-import './ItemView.css';
 import { getDescriptionsByIds } from '../../firebase/descriptionsController';
+import Description from '../../components/description/Description';
+import './ItemView.css';
 
 const ItemView = () => {
     const { itemId } = useParams();
@@ -64,55 +65,13 @@ const ItemView = () => {
                 )}
             </div>
             <hr />
-            <div className="item-description">
-                {state.loading && <h1>Cargando Detalle...</h1>}
-                {!state.loading &&
-                    state.error.length === 0 &&
-                    state.descriptions.length < state.item.description.length &&
-                    state.descriptions.length > 0 && (
-                        <p>
-                            *No se encontraron todas las descripciones. Intenta
-                            recargar la pagina.
-                        </p>
-                    )}
-                {state.descriptions.length === 0 ? (
-                    <h1>Hubo un error al cargar los detalles del producto.</h1>
-                ) : (
-                    state.descriptions.map((section, i) => (
-                        <div key={section.id}>
-                            <h5>{section.title}</h5>
-                            {section.type === 'list' ? (
-                                <ol>
-                                    {section.content.map((listItem, j) => (
-                                        <li className="mb-0" key={j}>
-                                            <p
-                                                className={
-                                                    j ===
-                                                    section.content.length - 1
-                                                        ? ''
-                                                        : 'mb-3'
-                                                }
-                                            >
-                                                {listItem}
-                                            </p>
-                                        </li>
-                                    ))}
-                                </ol>
-                            ) : (
-                                <p
-                                    className={
-                                        i === state.descriptions.length - 1
-                                            ? 'mb-0'
-                                            : ''
-                                    }
-                                >
-                                    {section.content}
-                                </p>
-                            )}
-                        </div>
-                    ))
-                )}
-            </div>
+            {state.loading && <h1>Cargando Detalle...</h1>}
+            {!state.loading && state.error.length === 0 && (
+                <Description
+                    descriptions={state.descriptions}
+                    itemDescriptions={state.item.description.length}
+                />
+            )}
         </div>
     );
 };

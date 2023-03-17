@@ -10,22 +10,6 @@
 .item-view hr {
   margin: 56px 0;
 }
-
-.item-view h5 {
-  color: rgb(var(--color-black));
-  font-family: var(--h5-font-bold);
-  font-size: var(--h5-tablet-size);
-  line-height: var(--h5-tablet-height);
-}
-
-.item-view p,
-.item-view li {
-  color: var(--color-black-75);
-  font-family: var(--paragraph-font);
-  font-size: var(--paragraph-tablet-size);
-  line-height: var(--paragraph-tablet-height);
-  margin-bottom: 32px;
-}
 /*Ends Mobile&Tablet, 0-1024px*/
 
 /*PC, >= 1025px*/
@@ -41,17 +25,6 @@
   .item-view hr {
     margin: 64px 0;
   }
-
-  .item-view h5 {
-    font-size: var(--h5-size);
-    line-height: var(--h5-height);
-  }
-
-  .item-view p,
-  .item-view li {
-    font-size: var(--paragraph-size);
-    line-height: var(--paragraph-height);
-  }
 }
 
 /*MOBILE, 0-728px*/
@@ -66,16 +39,5 @@
 
   .item-view hr {
     margin: 48px 0;
-  }
-
-  .item-view h5 {
-    font-size: var(--h5-phone-size);
-    line-height: var(--h5-phone-height);
-  }
-
-  .item-view p,
-  .item-view li {
-    font-size: var(--paragraph-size);
-    line-height: var(--paragraph-height);
   }
 }
