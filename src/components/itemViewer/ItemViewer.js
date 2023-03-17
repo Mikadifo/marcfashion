@@ -5,10 +5,10 @@ const ItemViewer = ({ imgs }) => {
         <div
             id="itemCarousel"
             className="carousel slide"
-            data-bs-ride="carousel"
+            data-bs-interval="false"
         >
             <div className="carousel-indicators">
-                {imgs.map((img, i) => (
+                {imgs.map((_, i) => (
                     <button
                         type="button"
                         key={i}
