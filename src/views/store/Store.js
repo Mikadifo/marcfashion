@@ -3,27 +3,19 @@ import Button from '../../components/button/Button';
 import Filter from '../../components/filter/Filter';
 import Item from '../../components/item/Item';
 import Search from '../../components/search/Search';
-import { getAllProductNames } from '../../firebase/productsController';
+import { items as products } from './../../resources/info/items';
 import './Store.css';
 
 const Store = () => {
     const [showFilters, setShowFilters] = useState(true);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-    const [products, setProducts] = useState([]);
 
     const updateScreenSize = () => {
         setScreenWidth(window.innerWidth);
     };
 
-    const getProducts = async () => {
-        console.log('Fetching Products...');
-        setProducts(await getAllProductNames());
-        console.log(products);
-    };
-
     useEffect(() => {
         window.addEventListener('resize', updateScreenSize);
-        getProducts();
         return () => {
             window.removeEventListener('resize', updateScreenSize);
         };
@@ -55,18 +47,14 @@ const Store = () => {
                 </div>
                 <div className={showFilters ? 'col-12 col-lg-9' : 'col-12'}>
                     <div className="row">
-                        {products.length === 0 ? (
-                            <h1>Cargando Productos...</h1>
-                        ) : (
-                            products.map((product) => (
-                                <div
-                                    className="col-xxl-auto col item-list"
-                                    key={product.id}
-                                >
-                                    <Item info={product} />
-                                </div>
-                            ))
-                        )}
+                        {products.map((product) => (
+                            <div
+                                className="col-xxl-auto col item-list"
+                                key={product.id}
+                            >
+                                <Item info={product} />
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

@@ -1,291 +1,140 @@
-//TODO: Export this to firebase storage
-//TODO: when exporting to firebase, make description its own collection, because most of them have the same descriptions: i.e. description: [id1, id2, id3, id5]
+//Export this to firebase storage when the list gets to large, whit the same structure
 export const items = [
     {
-        id: 'example_item_1',
-        img: 'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-        name: 'Example Item Temp', //not included
-        price: '$50.99',
-        colors: ['id_color_1', 'id_color_2'], //own collection
-        size: 'XL',
-        imgs: [],
-        fabrics: [
-            { id: 'fab_nacional', price: '50.99', name: 'Tela Nacional' },
-            { id: 'fab_import', price: '60.99', name: 'Tela Importada' },
+        id: '110',
+        name: 'CHAQUETA CORDUROY',
+        category: 'CHAQUETAS',
+        colors: [
+            'color_1',
+            'color_2',
+            'color_3',
+            'color_4',
+            'color_5',
+            'color_6',
+            'color_7',
         ],
-        descprition: [
-            //own collection, [id1, id2, id3]
-            {
-                id: 'gen_desc',
-                title: 'Descripción',
-                content:
-                    'Nuestros productos son fabricados en dos métodos de producción, máquina textil y personal artesano calificado.',
-            },
-            {
-                id: 'buy_steps',
-                title: 'Instrucciones de compra',
-                type: 'list',
-                content: [
-                    'Elije el tipo de tela',
-                    'Ejmplo list 2',
-                    'Ejepmlo list 3',
-                    'Ejemplo lista 4',
-                ],
-            },
-            {
-                id: 'custom_questions',
-                title: 'Personalización y preguntas',
-                content:
-                    'Si no encuentras el color, talla o estilo de tu preferencia o tienes cualquier duda sobre nuestros productos, no dudes en contactarnos. Puedes usar el link debajo de la barra de busqueda para facil acceso.',
-            },
+        sizes: ['S', 'M', 'L', 'XL', 'XXL', '46', '48', '50'],
+        imgs: [
+            'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+        ],
+        fabrics: ['Nacional', 'Importada'],
+        description: [
+            'desc_general',
+            'desc_buy_steps',
+            'desc_custom_and_questions',
+            'desc_prices',
+            'desc_durability',
+            'desc_instructions',
         ],
     },
     {
-        id: 'example_item_2',
-        img: 'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-        name: 'Example Item Temp',
-        price: '$50.99',
-        descprition: [
-            {
-                id: 'gen_desc',
-                title: 'Descripción',
-                content:
-                    'Nuestros productos son fabricados en dos métodos de producción, máquina textil y personal artesano calificado.',
-            },
-            {
-                id: 'buy_steps',
-                title: 'Instrucciones de compra',
-                type: 'list',
-                content: [
-                    'Elije el tipo de tela',
-                    'Ejmplo list 2',
-                    'Ejepmlo list 3',
-                    'Ejemplo lista 4',
-                ],
-            },
-            {
-                id: 'custom_questions',
-                title: 'Personalización y preguntas',
-                content:
-                    'Si no encuentras el color, talla o estilo de tu preferencia o tienes cualquier duda sobre nuestros productos, no dudes en contactarnos. Puedes usar el link debajo de la barra de busqueda para facil acceso.',
-            },
+        id: '220',
+        name: 'CHAQUETA HOMBRE CUADROS',
+        category: 'CHAQUETAS',
+        colors: [
+            'color_1',
+            'color_2',
+            'color_3',
+            'color_4',
+            'color_5',
+            'color_6',
+            'color_7',
+        ],
+        sizes: ['S', 'M', 'L', 'XL', '46', '48', '50'],
+        imgs: [
+            'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+        ],
+        fabrics: ['Nacional', 'Importada'],
+        description: [
+            'desc_general',
+            'desc_buy_steps',
+            'desc_custom_and_questions',
+            'desc_prices',
+            'desc_durability',
+            'desc_instructions',
         ],
     },
     {
-        id: 'example_item_3',
-        img: 'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-        name: 'Example Item Temp',
-        price: '$50.99',
-        descprition: [
-            {
-                id: 'gen_desc',
-                title: 'Descripción',
-                content:
-                    'Nuestros productos son fabricados en dos métodos de producción, máquina textil y personal artesano calificado.',
-            },
-            {
-                id: 'buy_steps',
-                title: 'Instrucciones de compra',
-                type: 'list',
-                content: [
-                    'Elije el tipo de tela',
-                    'Ejmplo list 2',
-                    'Ejepmlo list 3',
-                    'Ejemplo lista 4',
-                ],
-            },
-            {
-                id: 'custom_questions',
-                title: 'Personalización y preguntas',
-                content:
-                    'Si no encuentras el color, talla o estilo de tu preferencia o tienes cualquier duda sobre nuestros productos, no dudes en contactarnos. Puedes usar el link debajo de la barra de busqueda para facil acceso.',
-            },
+        id: '330',
+        name: 'CHAQUETA PANA',
+        category: 'CHAQUETAS',
+        colors: [
+            'color_1',
+            'color_2',
+            'color_3',
+            'color_4',
+            'color_5',
+            'color_6',
+            'color_7',
+        ],
+        sizes: ['S', 'M', 'L', 'XL', 'XXL', '46', '48', '50'],
+        imgs: [
+            'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+        ],
+        fabrics: ['Nacional', 'Importada'],
+        description: [
+            'desc_general',
+            'desc_buy_steps',
+            'desc_custom_and_questions',
+            'desc_prices',
+            'desc_durability',
+            'desc_instructions',
         ],
     },
     {
-        id: 'example_item_4',
-        img: 'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-        name: 'Example Item Temp',
-        price: '$50.99',
-        descprition: [
-            {
-                id: 'gen_desc',
-                title: 'Descripción',
-                content:
-                    'Nuestros productos son fabricados en dos métodos de producción, máquina textil y personal artesano calificado.',
-            },
-            {
-                id: 'buy_steps',
-                title: 'Instrucciones de compra',
-                type: 'list',
-                content: [
-                    'Elije el tipo de tela',
-                    'Ejmplo list 2',
-                    'Ejepmlo list 3',
-                    'Ejemplo lista 4',
-                ],
-            },
-            {
-                id: 'custom_questions',
-                title: 'Personalización y preguntas',
-                content:
-                    'Si no encuentras el color, talla o estilo de tu preferencia o tienes cualquier duda sobre nuestros productos, no dudes en contactarnos. Puedes usar el link debajo de la barra de busqueda para facil acceso.',
-            },
+        id: '440',
+        name: 'PANTALON HOMBRE',
+        category: 'PANTALONES',
+        colors: [
+            'color_1',
+            'color_2',
+            'color_3',
+            'color_4',
+            'color_5',
+            'color_6',
+            'color_7',
+        ],
+        sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+        imgs: [
+            'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+        ],
+        fabrics: ['Nacional', 'Importada'],
+        description: [
+            'desc_general',
+            'desc_buy_steps',
+            'desc_custom_and_questions',
+            'desc_prices',
+            'desc_durability',
+            'desc_composition',
+            'desc_instructions',
         ],
     },
     {
-        id: 'example_item_5',
-        img: 'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-        name: 'Example Item Temp',
-        price: '$50.99',
-        descprition: [
-            {
-                id: 'gen_desc',
-                title: 'Descripción',
-                content:
-                    'Nuestros productos son fabricados en dos métodos de producción, máquina textil y personal artesano calificado.',
-            },
-            {
-                id: 'buy_steps',
-                title: 'Instrucciones de compra',
-                type: 'list',
-                content: [
-                    'Elije el tipo de tela',
-                    'Ejmplo list 2',
-                    'Ejepmlo list 3',
-                    'Ejemplo lista 4',
-                ],
-            },
-            {
-                id: 'custom_questions',
-                title: 'Personalización y preguntas',
-                content:
-                    'Si no encuentras el color, talla o estilo de tu preferencia o tienes cualquier duda sobre nuestros productos, no dudes en contactarnos. Puedes usar el link debajo de la barra de busqueda para facil acceso.',
-            },
+        id: '550',
+        name: 'TERNO HOMBRE CASIMIR',
+        category: 'TERNOS',
+        colors: [
+            'color_1',
+            'color_2',
+            'color_3',
+            'color_4',
+            'color_5',
+            'color_6',
+            'color_7',
         ],
-    },
-    {
-        id: 'example_item_6',
-        img: 'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-        name: 'Example Item Temp',
-        price: '$50.99',
-        descprition: [
-            {
-                id: 'gen_desc',
-                title: 'Descripción',
-                content:
-                    'Nuestros productos son fabricados en dos métodos de producción, máquina textil y personal artesano calificado.',
-            },
-            {
-                id: 'buy_steps',
-                title: 'Instrucciones de compra',
-                type: 'list',
-                content: [
-                    'Elije el tipo de tela',
-                    'Ejmplo list 2',
-                    'Ejepmlo list 3',
-                    'Ejemplo lista 4',
-                ],
-            },
-            {
-                id: 'custom_questions',
-                title: 'Personalización y preguntas',
-                content:
-                    'Si no encuentras el color, talla o estilo de tu preferencia o tienes cualquier duda sobre nuestros productos, no dudes en contactarnos. Puedes usar el link debajo de la barra de busqueda para facil acceso.',
-            },
+        sizes: ['S', 'M', 'L', 'XL', '46', '48'],
+        imgs: [
+            'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
         ],
-    },
-    {
-        id: 'example_item_7',
-        img: 'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-        name: 'Example Item Temp',
-        price: '$50.99',
-        descprition: [
-            {
-                id: 'gen_desc',
-                title: 'Descripción',
-                content:
-                    'Nuestros productos son fabricados en dos métodos de producción, máquina textil y personal artesano calificado.',
-            },
-            {
-                id: 'buy_steps',
-                title: 'Instrucciones de compra',
-                type: 'list',
-                content: [
-                    'Elije el tipo de tela',
-                    'Ejmplo list 2',
-                    'Ejepmlo list 3',
-                    'Ejemplo lista 4',
-                ],
-            },
-            {
-                id: 'custom_questions',
-                title: 'Personalización y preguntas',
-                content:
-                    'Si no encuentras el color, talla o estilo de tu preferencia o tienes cualquier duda sobre nuestros productos, no dudes en contactarnos. Puedes usar el link debajo de la barra de busqueda para facil acceso.',
-            },
-        ],
-    },
-    {
-        id: 'example_item_8',
-        img: 'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-        name: 'Example Item Temp',
-        price: '$50.99',
-        descprition: [
-            {
-                id: 'gen_desc',
-                title: 'Descripción',
-                content:
-                    'Nuestros productos son fabricados en dos métodos de producción, máquina textil y personal artesano calificado.',
-            },
-            {
-                id: 'buy_steps',
-                title: 'Instrucciones de compra',
-                type: 'list',
-                content: [
-                    'Elije el tipo de tela',
-                    'Ejmplo list 2',
-                    'Ejepmlo list 3',
-                    'Ejemplo lista 4',
-                ],
-            },
-            {
-                id: 'custom_questions',
-                title: 'Personalización y preguntas',
-                content:
-                    'Si no encuentras el color, talla o estilo de tu preferencia o tienes cualquier duda sobre nuestros productos, no dudes en contactarnos. Puedes usar el link debajo de la barra de busqueda para facil acceso.',
-            },
-        ],
-    },
-    {
-        id: 'example_item_9',
-        img: 'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-        name: 'Example Item Temp',
-        price: '$50.99',
-        descprition: [
-            {
-                id: 'gen_desc',
-                title: 'Descripción',
-                content:
-                    'Nuestros productos son fabricados en dos métodos de producción, máquina textil y personal artesano calificado.',
-            },
-            {
-                id: 'buy_steps',
-                title: 'Instrucciones de compra',
-                type: 'list',
-                content: [
-                    'Elije el tipo de tela',
-                    'Ejmplo list 2',
-                    'Ejepmlo list 3',
-                    'Ejemplo lista 4',
-                ],
-            },
-            {
-                id: 'custom_questions',
-                title: 'Personalización y preguntas',
-                content:
-                    'Si no encuentras el color, talla o estilo de tu preferencia o tienes cualquier duda sobre nuestros productos, no dudes en contactarnos. Puedes usar el link debajo de la barra de busqueda para facil acceso.',
-            },
+        fabrics: ['Nacional', 'Importada'],
+        description: [
+            'desc_general',
+            'desc_buy_steps',
+            'desc_custom_and_questions',
+            'desc_prices',
+            'desc_durability',
+            'desc_composition',
+            'desc_instructions',
         ],
     },
 ];

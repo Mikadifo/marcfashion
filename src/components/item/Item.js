@@ -14,7 +14,6 @@ const Item = ({ info }) => {
             onMouseLeave={() => setHover(false)}
             onMouseUp={() => setHover(false)}
             onClick={() => navigate(`/tienda/${info.id}`)}
-            data-testid={info.id}
         >
             <img src={info.imgs[0]} alt={info.name} />
             <p>{info.name}</p>
