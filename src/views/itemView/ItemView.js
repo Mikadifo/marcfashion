@@ -32,6 +32,7 @@ const ItemView = () => {
     useEffect(() => {
         if (Object.keys(selectedOptions).length !== 0) {
             console.log('Getting Price');
+            console.log(selectedOptions);
             const result = getPriceByOptions({
                 ...selectedOptions,
                 category: state.item.category,

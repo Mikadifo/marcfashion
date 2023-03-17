@@ -8,7 +8,6 @@ const ItemOptions = ({ options, setOptions }) => {
     const [color, setColor] = useState(options.colors[0]);
 
     useEffect(() => {
-        console.log('Render IOPTIONS');
         setOptions({
             size,
             color,
