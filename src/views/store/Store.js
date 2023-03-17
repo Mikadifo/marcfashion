@@ -1,29 +1,31 @@
-import { useEffect, useState } from 'react';
-import Button from '../../components/button/Button';
-import Filter from '../../components/filter/Filter';
+//Many comments are because the filter feat was disabled, too few items
+//import { useEffect, useState } from 'react';
+//import Button from '../../components/button/Button';
+//import Filter from '../../components/filter/Filter';
 import Item from '../../components/item/Item';
 import Search from '../../components/search/Search';
 import { items as products } from './../../resources/info/items';
 import './Store.css';
 
 const Store = () => {
-    const [showFilters, setShowFilters] = useState(true);
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    //const [showFilters, setShowFilters] = useState(true);
+    //const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
-    const updateScreenSize = () => {
-        setScreenWidth(window.innerWidth);
-    };
+    //const updateScreenSize = () => {
+    //setScreenWidth(window.innerWidth);
+    //};
 
-    useEffect(() => {
-        window.addEventListener('resize', updateScreenSize);
-        return () => {
-            window.removeEventListener('resize', updateScreenSize);
-        };
-    }, []);
+    //useEffect(() => {
+    //window.addEventListener('resize', updateScreenSize);
+    //return () => {
+    //window.removeEventListener('resize', updateScreenSize);
+    //};
+    //}, []);
 
     return (
         <div className="store" data-testid="store">
             <Search />
+            {/* This feat is disabled, to few items
             <div className="filter-button text-end">
                 <Button
                     text={
@@ -37,7 +39,9 @@ const Store = () => {
                     modalTarget="#filter-modal"
                 />
             </div>
+		*/}
             <div className="row items-container">
+                {/* This feat is disabled, to few items
                 <div
                     className={`col-3 ${
                         !showFilters ? 'd-none' : 'd-none d-lg-flex'
@@ -46,6 +50,9 @@ const Store = () => {
                     <Filter />
                 </div>
                 <div className={showFilters ? 'col-12 col-lg-9' : 'col-12'}>
+		Replace with the next div
+		*/}
+                <div className="col-12 mt-5">
                     <div className="row">
                         {products.map((product) => (
                             <div
@@ -58,6 +65,8 @@ const Store = () => {
                     </div>
                 </div>
             </div>
+
+            {/* This feat is disabled, to few items
             <div
                 className="modal fade"
                 id="filter-modal"
@@ -89,6 +98,7 @@ const Store = () => {
                     </div>
                 </div>
             </div>
+	    */}
         </div>
     );
 };

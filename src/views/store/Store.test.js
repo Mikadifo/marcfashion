@@ -27,11 +27,12 @@ test('store and search bar render', () => {
 });
 
 test('store filters and item render', () => {
+    //Filters feat has been disabled until getting more items in the list
     const store = screen.getByTestId('store');
-    const filters = store.getElementsByClassName('filters-container');
+    //const filters = store.getElementsByClassName('filters-container');
     const itemCards = store.getElementsByClassName('item-card');
     expect(itemCards.length).toBeGreaterThan(0);
     //There are two Filter components, for pc and for mobile
-    expect(filters[0]).toBeInTheDocument();
-    expect(filters[1]).toBeInTheDocument();
+    //expect(filters[0]).toBeInTheDocument();
+    //expect(filters[1]).toBeInTheDocument();
 });
