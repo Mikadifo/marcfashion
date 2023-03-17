@@ -32,7 +32,6 @@ const ItemView = () => {
     useEffect(() => {
         if (Object.keys(selectedOptions).length !== 0) {
             console.log('Getting Price');
-            console.log(selectedOptions);
             const result = getPriceByOptions({
                 ...selectedOptions,
                 category: state.item.category,
@@ -91,9 +90,9 @@ const ItemView = () => {
                             <div className="row pt-5">
                                 <div className="col-12 col-sm-8 col-lg-10 text-center text-sm-end my-auto">
                                     <h4 className="mb-3 m-sm-0">
-                                        {state.price === 0
+                                        {state.price === 0 || !state.price
                                             ? '--'
-                                            : '$' + state.price}
+                                            : '$' + state.price.toFixed(2)}
                                     </h4>
                                 </div>
                                 <div className="col-12 col-sm-4 col-lg-2 text-center">
