@@ -8,6 +8,7 @@ import { getDescriptionsByIds } from '../../firebase/descriptionsController';
 import Description from '../../components/description/Description';
 import Button from '../../components/button/Button';
 import './ItemView.css';
+import { getPriceByOptions } from '../../firebase/priceController';
 
 const ItemView = () => {
     const { itemId } = useParams();
@@ -16,16 +17,33 @@ const ItemView = () => {
         error: '',
         item: {},
         descriptions: [],
+        price: 0,
     });
+    const [selectedOptions, setSelectedOptions] = useState({});
 
     const getItemOptions = () => {
         return {
             sizes: state.item.sizes,
             colors: state.item.colors,
             fabrics: state.item.fabrics,
-            category: state.item.category,
         };
     };
+
+    useEffect(() => {
+        if (Object.keys(selectedOptions).length !== 0) {
+            console.log('Getting Price');
+            const result = getPriceByOptions({
+                ...selectedOptions,
+                category: state.item.category,
+            });
+            if (result.error.length === 0) {
+                setState((old) => ({
+                    ...old,
+                    price: result.price,
+                }));
+            }
+        }
+    }, [selectedOptions]);
 
     useEffect(() => {
         const getItem = () => {
@@ -64,13 +82,18 @@ const ItemView = () => {
                                 <ItemViewer imgs={state.item.imgs} />
                             </div>
                             <div className="col-lg-5 col-xl-6 col-xxl-4 ps-lg-5 ps-xxl-0">
-                                <ItemOptions options={getItemOptions()} />
+                                <ItemOptions
+                                    options={getItemOptions()}
+                                    setOptions={setSelectedOptions}
+                                />
                             </div>
                         </div>
                         <div>
                             <div className="row pt-5">
                                 <div className="col-12 col-sm-8 col-lg-10 text-center text-sm-end my-auto">
-                                    <h4 className="mb-3 m-sm-0">$ PRI.CE</h4>
+                                    <h4 className="mb-3 m-sm-0">
+                                        ${state.price === 0 ? '-' : state.price}
+                                    </h4>
                                 </div>
                                 <div className="col-12 col-sm-4 col-lg-2 text-center">
                                     <Button text="Comprar" type="button" />
