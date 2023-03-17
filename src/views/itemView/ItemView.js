@@ -59,10 +59,10 @@ const ItemView = () => {
                     <div className="text-center">
                         <h4>{state.item.name}</h4>
                         <div className="row">
-                            <div className="col-7">
+                            <div className="col-lg-7 col-xl-6 col-xxl-6 d-flex justify-content-center mb-5 mb-lg-0">
                                 <ItemViewer imgs={state.item.imgs} />
                             </div>
-                            <div className="col-5">
+                            <div className="col-lg-5 col-xl-6 col-xxl-4 ps-lg-5 ps-xxl-0">
                                 <ItemOptions options={getItemOptions()} />
                             </div>
                         </div>
