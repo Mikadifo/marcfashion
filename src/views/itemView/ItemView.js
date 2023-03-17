@@ -36,12 +36,10 @@ const ItemView = () => {
                 ...selectedOptions,
                 category: state.item.category,
             });
-            if (result.error.length === 0) {
-                setState((old) => ({
-                    ...old,
-                    price: result.price,
-                }));
-            }
+            setState((old) => ({
+                ...old,
+                price: result.price,
+            }));
         }
     }, [selectedOptions]);
 
@@ -92,7 +90,9 @@ const ItemView = () => {
                             <div className="row pt-5">
                                 <div className="col-12 col-sm-8 col-lg-10 text-center text-sm-end my-auto">
                                     <h4 className="mb-3 m-sm-0">
-                                        ${state.price === 0 ? '-' : state.price}
+                                        {state.price === 0
+                                            ? '--'
+                                            : '$' + state.price}
                                     </h4>
                                 </div>
                                 <div className="col-12 col-sm-4 col-lg-2 text-center">
