@@ -7,8 +7,8 @@ import { items as products } from './../../resources/info/items';
 import { getDescriptionsByIds } from '../../firebase/descriptionsController';
 import Description from '../../components/description/Description';
 import Button from '../../components/button/Button';
-import './ItemView.css';
 import { getPriceByOptions } from '../../firebase/priceController';
+import './ItemView.css';
 
 const ItemView = () => {
     const { itemId } = useParams();

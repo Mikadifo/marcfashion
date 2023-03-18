@@ -1,11 +1,24 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { getPriceByOptions } from '../../firebase/priceController';
 import './Item.css';
 
-//TODO: Take the price from lowest price
 const Item = ({ info }) => {
     const [hover, setHover] = useState(false);
+    const [price, setPrice] = useState(0);
     const navigate = useNavigate();
+
+    useEffect(() => {
+        const getItemPrice = () => {
+            const result = getPriceByOptions({
+                size: info.sizes[0],
+                category: info.category,
+                fabric: 'Nacional',
+            });
+            setPrice(result.price);
+        };
+        getItemPrice();
+    }, [info]);
 
     return (
         <div
@@ -17,7 +30,7 @@ const Item = ({ info }) => {
         >
             <img src={info.imgs[0]} alt={info.name} />
             <p>{info.name}</p>
-            <h5>TODO$</h5>
+            <h5>{price === 0 || !price ? '--' : '$' + price.toFixed(2)}</h5>
         </div>
     );
 };

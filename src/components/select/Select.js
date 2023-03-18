@@ -7,10 +7,11 @@ const Select = ({ title, options, value, setValue }) => {
 
     useEffect(() => {
         if (options[0].startsWith('color_')) {
+            console.log('SELECT');
             const data = getColorsByIds(options);
             setColors(data.colors);
         }
-    }, []);
+    }, [options]);
 
     return (
         <div className="text-start select-container">
