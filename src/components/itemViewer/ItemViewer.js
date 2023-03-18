@@ -1,10 +1,6 @@
-import { useEffect } from 'react';
 import './ItemViewer.css';
 
 const ItemViewer = ({ imgs, selectedColor }) => {
-    useEffect(() => {
-        console.log(selectedColor);
-    }, [selectedColor]);
     return (
         <div
             id="itemCarousel"

@@ -30,10 +30,11 @@ const ItemView = () => {
     };
 
     useEffect(() => {
-        if (Object.keys(selectedOptions).length !== 0) {
+        if (selectedOptions.fabric && selectedOptions.size) {
             console.log('Getting Price');
             const result = getPriceByOptions({
-                ...selectedOptions,
+                size: selectedOptions.size,
+                fabric: selectedOptions.fabric,
                 category: state.item.category,
             });
             setState((old) => ({
@@ -41,7 +42,7 @@ const ItemView = () => {
                 price: result.price,
             }));
         }
-    }, [selectedOptions, state.item.category]);
+    }, [selectedOptions.fabric, selectedOptions.size, state.item.category]);
 
     useEffect(() => {
         const getItem = () => {
