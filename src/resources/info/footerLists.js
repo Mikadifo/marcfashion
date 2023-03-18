@@ -1,4 +1,4 @@
-import { address } from '../../constants/texts';
+import { address, locationURL } from '../../constants/texts';
 
 export const footerLists = [
     {
@@ -58,7 +58,7 @@ export const footerLists = [
         links: [
             {
                 id: 'fl-ubicacion',
-                url: "https://www.google.com/maps/place/1%C2%B014'33.4%22S+78%C2%B040'32.5%22W/@-1.2427849,-78.6763546,18.59z/data=!4m4!3m3!8m2!3d-1.2426025!4d-78.6756877?hl=en-US",
+                url: locationURL,
                 name: address,
             },
         ],

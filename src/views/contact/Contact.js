@@ -3,10 +3,12 @@ import FooterHero from '../../components/footerHero/FooterHero';
 import {
     address,
     email,
+    locationURL,
     primaryNumber,
     primaryNumberURL,
     secondaryNumber,
     secondaryNumberURL,
+    embededMapURL,
 } from './../../constants/texts';
 import './Contact.css';
 
@@ -18,10 +20,18 @@ const Contact = () => {
             <iframe
                 title="marcfashion-map"
                 className="map-frame"
-                src="https://maps.google.com/maps?q=centeravid&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                src={embededMapURL}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
             <h5 className="text-start">Puedes visitarnos físicamente</h5>
-            <a href="#" target="_blank" rel="noreferrer" className="text-start">
+            <a
+                href={locationURL}
+                target="_blank"
+                rel="noreferrer"
+                className="text-start"
+            >
                 <p>{address}</p>
             </a>
         </div>
