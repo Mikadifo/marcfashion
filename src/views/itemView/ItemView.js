@@ -77,7 +77,14 @@ const ItemView = () => {
                         <h4>{state.item.name}</h4>
                         <div className="row">
                             <div className="col-lg-7 col-xl-6 col-xxl-6 d-flex justify-content-center mb-5 mb-lg-0">
-                                <ItemViewer imgs={state.item.imgs} />
+                                <ItemViewer
+                                    imgs={state.item.imgs}
+                                    selectedColor={
+                                        selectedOptions
+                                            ? selectedOptions.color
+                                            : 'color_1'
+                                    }
+                                />
                             </div>
                             <div className="col-lg-5 col-xl-6 col-xxl-4 ps-lg-5 ps-xxl-0">
                                 <ItemOptions

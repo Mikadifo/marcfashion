@@ -1,6 +1,10 @@
+import { useEffect } from 'react';
 import './ItemViewer.css';
 
-const ItemViewer = ({ imgs }) => {
+const ItemViewer = ({ imgs, selectedColor }) => {
+    useEffect(() => {
+        console.log(selectedColor);
+    }, [selectedColor]);
     return (
         <div
             id="itemCarousel"
@@ -8,13 +12,13 @@ const ItemViewer = ({ imgs }) => {
             data-bs-interval="false"
         >
             <div className="carousel-indicators">
-                {imgs.map((_, i) => (
+                {imgs.map((img, i) => (
                     <button
                         type="button"
-                        key={i}
+                        key={img.id}
                         data-bs-target="#itemCarousel"
                         data-bs-slide-to={i}
-                        className={i === 0 ? 'active' : ''}
+                        className={img.color === selectedColor ? 'active' : ''}
                         aria-current="true"
                         aria-label={`Slide ${i}`}
                     />
@@ -23,10 +27,12 @@ const ItemViewer = ({ imgs }) => {
             <div className="carousel-inner">
                 {imgs.map((img, i) => (
                     <div
-                        className={`carousel-item ${i === 0 && 'active'}`}
-                        key={i}
+                        className={`carousel-item ${
+                            img.color === selectedColor && 'active'
+                        }`}
+                        key={img.id}
                     >
-                        <img src={img} alt={`Product img ${i}`} />
+                        <img src={img.url} alt={`Product img ${i}`} />
                     </div>
                 ))}
             </div>

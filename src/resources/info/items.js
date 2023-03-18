@@ -15,8 +15,16 @@ export const items = [
         ],
         sizes: ['S', 'M', 'L', 'XL', 'XXL', '46', '48', '50'],
         imgs: [
-            'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-            'https://images.unsplash.com/photo-1548454782-15b189d129ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80',
+            {
+                id: 'img_model_black',
+                url: 'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+                color: 'color_1',
+            },
+            {
+                id: 'img_model_blue',
+                url: 'https://images.unsplash.com/photo-1548454782-15b189d129ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80',
+                color: 'color_2',
+            },
         ],
         fabrics: ['Nacional', 'Importada'],
         description: [
@@ -43,8 +51,16 @@ export const items = [
         ],
         sizes: ['S', 'M', 'L', 'XL', '46', '48', '50'],
         imgs: [
-            'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-            'https://images.unsplash.com/photo-1548454782-15b189d129ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80',
+            {
+                id: 'img_model_black',
+                url: 'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+                color: 'color_1',
+            },
+            {
+                id: 'img_model_blue',
+                url: 'https://images.unsplash.com/photo-1548454782-15b189d129ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80',
+                color: 'color_2',
+            },
         ],
         fabrics: ['Nacional', 'Importada'],
         description: [
@@ -71,8 +87,16 @@ export const items = [
         ],
         sizes: ['S', 'M', 'L', 'XL', 'XXL', '46', '48', '50'],
         imgs: [
-            'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-            'https://images.unsplash.com/photo-1548454782-15b189d129ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80',
+            {
+                id: 'img_model_black',
+                url: 'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+                color: 'color_1',
+            },
+            {
+                id: 'img_model_blue',
+                url: 'https://images.unsplash.com/photo-1548454782-15b189d129ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80',
+                color: 'color_2',
+            },
         ],
         fabrics: ['Nacional', 'Importada'],
         description: [
@@ -99,8 +123,16 @@ export const items = [
         ],
         sizes: ['S', 'M', 'L', 'XL', 'XXL'],
         imgs: [
-            'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-            'https://images.unsplash.com/photo-1548454782-15b189d129ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80',
+            {
+                id: 'img_model_black',
+                url: 'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+                color: 'color_1',
+            },
+            {
+                id: 'img_model_blue',
+                url: 'https://images.unsplash.com/photo-1548454782-15b189d129ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80',
+                color: 'color_2',
+            },
         ],
         fabrics: ['Nacional', 'Importada'],
         description: [
@@ -128,8 +160,16 @@ export const items = [
         ],
         sizes: ['S', 'M', 'L', 'XL', '46', '48'],
         imgs: [
-            'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-            'https://images.unsplash.com/photo-1548454782-15b189d129ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80',
+            {
+                id: 'img_model_black',
+                url: 'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+                color: 'color_1',
+            },
+            {
+                id: 'img_model_blue',
+                url: 'https://images.unsplash.com/photo-1548454782-15b189d129ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80',
+                color: 'color_2',
+            },
         ],
         fabrics: ['Nacional', 'Importada'],
         description: [
