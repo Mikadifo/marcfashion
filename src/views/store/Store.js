@@ -2,12 +2,14 @@
 //import { useEffect, useState } from 'react';
 //import Button from '../../components/button/Button';
 //import Filter from '../../components/filter/Filter';
+import { useState } from 'react';
 import Item from '../../components/item/Item';
 import Search from '../../components/search/Search';
-import { items as products } from './../../resources/info/items';
+import { items } from './../../resources/info/items';
 import './Store.css';
 
 const Store = () => {
+    const [products, setProducts] = useState(items);
     //const [showFilters, setShowFilters] = useState(true);
     //const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
@@ -24,7 +26,7 @@ const Store = () => {
 
     return (
         <div className="store" data-testid="store">
-            <Search />
+            <Search setItems={setProducts} />
             {/* This feat is disabled, to few items
             <div className="filter-button text-end">
                 <Button
@@ -54,6 +56,9 @@ const Store = () => {
 		*/}
                 <div className="col-12 mt-5">
                     <div className="row">
+                        {products.length === 0 && (
+                            <h1>No se encontro resultados</h1>
+                        )}
                         {products.map((product) => (
                             <div
                                 className="col-xxl-auto col item-list"

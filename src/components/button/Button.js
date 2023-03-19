@@ -4,6 +4,7 @@ import './Button.css';
 const Button = ({
     text,
     type,
+    isSubmit,
     action,
     modalToggle,
     modalTarget,
@@ -26,6 +27,7 @@ const Button = ({
             onMouseLeave={handleMouseOut}
             onMouseDown={() => setActive(true)}
             onMouseUp={handleMouseOut}
+            type={isSubmit && 'submit'}
             onClick={action}
             className={`main-${type} ${hover && `${type}-hover`} ${
                 active && `${type}-active`

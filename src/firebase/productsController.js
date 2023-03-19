@@ -1,3 +1,4 @@
+import { items } from '../resources/info/items';
 //import { collection, getDocs } from 'firebase/firestore';
 //import db from './config';
 
@@ -16,3 +17,13 @@
 //console.log('Error fetching products. Try reloading the page.');
 //}
 //};
+
+export const searchProduct = (searchValue) => {
+    const loweredCaseValue = searchValue.toLowerCase();
+    return items.filter(
+        (item) =>
+            item.name.toLowerCase().includes(loweredCaseValue) ||
+            item.category.toLowerCase().includes(loweredCaseValue) ||
+            item.sizes.join('').toLowerCase().includes(loweredCaseValue[0]),
+    );
+};
