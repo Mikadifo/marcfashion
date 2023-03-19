@@ -2,8 +2,11 @@ import { render, screen, cleanup } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import Item from './Item';
 
+let itemPrice = 47;
+let mockItem = {};
+
 beforeEach(() => {
-    const mockItem = {
+    mockItem = {
         id: '110',
         name: 'CHAQUETA CORDUROY',
         category: 'CHAQUETAS',
@@ -18,7 +21,11 @@ beforeEach(() => {
         ],
         sizes: ['S', 'M', 'L', 'XL', 'XXL', '46', '48', '50'],
         imgs: [
-            'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+            {
+                id: 'img_model_black',
+                url: 'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+                color: 'color_1',
+            },
         ],
         fabrics: ['Nacional', 'Importada'],
         description: [
@@ -43,13 +50,15 @@ afterEach(() => {
 });
 
 test('item render', () => {
-    //items.forEach((item) => {
-    //const itemList = screen.getByTestId(item.id);
-    //const itemImg = itemList.getElementsByTagName('img')[0];
-    //expect(itemList).toBeInTheDocument();
-    //expect(itemImg).toBeInTheDocument();
-    //expect(itemList).toHaveTextContent(item.name);
-    //expect(itemList).toHaveTextContent(item.price);
-    //expect(itemImg).toHaveAttribute('src', item.imgs[0]);
-    //});
+    const itemCard = screen.getByTestId('item-card');
+    const img = itemCard.getElementsByTagName('img')[0];
+    const paragraph = itemCard.getElementsByTagName('p')[0];
+    const h5 = itemCard.getElementsByTagName('h5')[0];
+    expect(itemCard).toBeInTheDocument();
+    expect(img).toBeInTheDocument();
+    expect(img).toHaveAttribute('src', mockItem.imgs[0].url);
+    expect(img).toHaveAttribute('alt', mockItem.name);
+    expect(paragraph).toBeInTheDocument();
+    expect(paragraph).toHaveTextContent(mockItem.name);
+    expect(h5).toHaveTextContent('$' + itemPrice.toFixed(2));
 });
