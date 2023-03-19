@@ -1,3 +1,4 @@
+import { customizedProductURL } from '../../constants/texts';
 import Button from './../button/Button';
 import './Search.css';
 
@@ -19,9 +20,11 @@ const Search = () => {
             </form>
             <div className="text-start d-flex search-caption">
                 <p className="my-auto d-none d-sm-flex">
-                    No encuentras lo que necesitas?
+                    ¿No encuentras lo que necesitas?
                 </p>
-                <Button text={'Personaliza tu prenda'} type="link" />
+                <a href={customizedProductURL} target="_blank" rel="noreferrer">
+                    <Button text={'Personaliza tu prenda'} type="link" />
+                </a>
             </div>
         </div>
     );
