@@ -8,6 +8,7 @@ import { getDescriptionsByIds } from '../../firebase/descriptionsController';
 import Description from '../../components/description/Description';
 import Button from '../../components/button/Button';
 import { getPriceByOptions } from '../../firebase/priceController';
+import { buyProductURL } from '../../constants/texts';
 import './ItemView.css';
 
 const ItemView = () => {
@@ -20,6 +21,14 @@ const ItemView = () => {
         price: 0,
     });
     const [selectedOptions, setSelectedOptions] = useState({});
+
+    const getCompleteBuyingURL = () => {
+        return buyProductURL
+            .replace('$name', state.item.name)
+            .replace('$color', selectedOptions.color)
+            .replace('$size', selectedOptions.size)
+            .replace('$fabric', selectedOptions.fabric);
+    };
 
     const getItemOptions = () => {
         return {
@@ -104,7 +113,14 @@ const ItemView = () => {
                                     </h4>
                                 </div>
                                 <div className="col-12 col-sm-4 col-lg-2 text-center">
-                                    <Button text="Comprar" type="button" />
+                                    <a
+                                        href={getCompleteBuyingURL()}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        data-testid="buy-link"
+                                    >
+                                        <Button text="Comprar" type="button" />
+                                    </a>
                                 </div>
                             </div>
                         </div>

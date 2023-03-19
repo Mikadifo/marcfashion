@@ -6,6 +6,7 @@ const ItemViewer = ({ imgs, selectedColor }) => {
             id="itemCarousel"
             className="carousel slide item-viewer"
             data-bs-interval="false"
+            data-testid="item-viewer"
         >
             <div className="carousel-indicators">
                 {imgs.map((img, i) => (

@@ -16,7 +16,7 @@ const ItemOptions = ({ options, setOptions }) => {
     }, [fabric, size, color, setOptions]);
 
     return (
-        <div className="select-options-container">
+        <div className="select-options-container" data-testid="item-options">
             <Select
                 title={'Tela'}
                 options={options.fabrics}
