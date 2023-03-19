@@ -28,7 +28,7 @@ const Item = ({ info }) => {
             onMouseUp={() => setHover(false)}
             onClick={() => navigate(`/tienda/${info.id}`)}
         >
-            <img src={info.imgs[0]} alt={info.name} />
+            <img src={info.imgs[0].url} alt={info.name} />
             <p>{info.name}</p>
             <h5>{price === 0 || !price ? '--' : '$' + price.toFixed(2)}</h5>
         </div>
