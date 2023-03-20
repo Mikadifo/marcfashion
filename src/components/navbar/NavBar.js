@@ -13,7 +13,7 @@ const NavBar = () => {
 
     return (
         <nav
-            className="navbar navbar-expand-lg sticky-top"
+            className="navbar navbar-expand-md sticky-top"
             data-testid="navbar"
         >
             <div className="container-fluid p-0">
@@ -41,10 +41,10 @@ const NavBar = () => {
                     )}
                 </button>
                 <div
-                    className="collapse navbar-collapse justify-content-end"
+                    className="collapse navbar-collapse justify-content-end mt-3 mt-md-0 text-end"
                     id="navbarNav"
                 >
-                    <ul className="navbar-nav">
+                    <ul className="navbar-nav p-0 gap-3 gap-md-0">
                         <li className="nav-item">
                             <Link
                                 className={`nav-link ${
