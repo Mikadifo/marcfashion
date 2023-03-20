@@ -1,5 +1,6 @@
 /*Begin Tablet, 728-1024px*/
 .mision-vision {
+  margin: 0;
   background-color: var(--color-black-10);
   padding: 96px 128px;
 }
