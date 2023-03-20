@@ -1,5 +1,6 @@
 import Button from '../../components/button/Button';
 import FooterHero from '../../components/footerHero/FooterHero';
+import { otherLocations } from '../../resources/info/locations';
 import {
     address,
     email,
@@ -16,7 +17,6 @@ const Contact = () => {
     const locationSection = () => (
         <div className="location text-center">
             <h3>Ubicación</h3>
-            {/* TODO: Change map url */}
             <iframe
                 title="marcfashion-map"
                 className="map-frame"
@@ -25,15 +25,23 @@ const Contact = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
-            <h5 className="text-start">Puedes visitarnos físicamente</h5>
+            <h5 className="text-start">Puedes visitarnos físicamente en:</h5>
             <a
                 href={locationURL}
                 target="_blank"
                 rel="noreferrer"
-                className="text-start"
+                className="text-start location-link"
             >
                 <p>{address}</p>
             </a>
+            <h5 className="text-start">
+                También puedes encontrarnos en la sección de ropa de:
+            </h5>
+            {otherLocations.map((cityLocation) => (
+                <p className="text-start" key={cityLocation.id}>
+                    {cityLocation.locations}
+                </p>
+            ))}
         </div>
     );
     const contactSection = () => (

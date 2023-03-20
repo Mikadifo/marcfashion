@@ -32,12 +32,17 @@
     drop-shadow(0px 2.76726px 2.21381px rgba(29, 39, 38, 0.0196802));
 }
 
-.location a {
+.location a,
+.location p {
   text-decoration: none;
   color: var(--color-black-75);
   font-family: var(--paragraph-font);
   font-size: var(--paragraph-tablet-size);
   line-height: var(--paragraph-tablet-height);
+}
+
+.location-link p {
+  margin-bottom: 32px;
 }
 
 .location h3,
@@ -78,7 +83,12 @@
     margin-bottom: 56px;
   }
 
-  .location a {
+  .location-link p {
+    margin-bottom: 56px;
+  }
+
+  .location a,
+  .location p {
     font-size: var(--paragraph-size);
     line-height: var(--paragraph-height);
   }
@@ -112,7 +122,8 @@
     height: 180px;
   }
 
-  .location a {
+  .location a,
+  .location p {
     font-size: var(--paragraph-size);
     line-height: var(--paragraph-height);
   }
