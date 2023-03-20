@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from './../../logo.png';
 import './NavBar.css';
@@ -7,7 +7,9 @@ const NavBar = () => {
     const { pathname } = useLocation();
     const [showMenu, setShowMenu] = useState(false);
 
-    window.scrollTo({ top: 0 });
+    useEffect(() => {
+        window.scrollTo({ top: 0 });
+    }, [pathname]);
 
     return (
         <nav
