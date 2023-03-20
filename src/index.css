@@ -2,11 +2,9 @@ body,
 html {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 html {
-  width: 100vw;
   --color-primary: #2c645e;
   --color-secondary: #38a194;
   --color-brand-gradient: linear-gradient(0.25turn, #38a194, #2c645e);
