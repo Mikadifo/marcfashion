@@ -5,6 +5,7 @@ import Store from './views/store/Store';
 import About from './views/about/About';
 import Contact from './views/contact/Contact';
 import ItemView from './views/itemView/ItemView';
+import 'react-loading-skeleton/dist/skeleton.css';
 
 const App = () => {
     return (
