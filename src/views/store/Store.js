@@ -2,13 +2,16 @@
 //import { useEffect, useState } from 'react';
 //import Button from '../../components/button/Button';
 //import Filter from '../../components/filter/Filter';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import Item from '../../components/item/Item';
 import Search from '../../components/search/Search';
+import { searchProduct } from '../../firebase/productsController';
 import { items } from './../../resources/info/items';
 import './Store.css';
 
 const Store = () => {
+    const searchParam = useLocation().search;
     const [products, setProducts] = useState(items);
     //const [showFilters, setShowFilters] = useState(true);
     //const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -24,9 +27,14 @@ const Store = () => {
     //};
     //}, []);
 
+    useEffect(() => {
+        const searchQuery = new URLSearchParams(searchParam).get('search');
+        setProducts(searchProduct(searchQuery ? searchQuery : ''));
+    }, [searchParam]);
+
     return (
         <div className="store" data-testid="store">
-            <Search setItems={setProducts} />
+            <Search />
             {/* This feat is disabled, to few items
             <div className="filter-button text-end">
                 <Button

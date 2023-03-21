@@ -1,15 +1,16 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { customizedProductURL } from '../../constants/texts';
-import { searchProduct } from '../../firebase/productsController';
 import Button from './../button/Button';
 import './Search.css';
 
-const Search = ({ setItems }) => {
+const Search = () => {
     const [searchValue, setSearchValue] = useState('');
+    const navigate = useNavigate();
 
     const handleSearch = (evt) => {
         evt.preventDefault();
-        setItems(searchProduct(searchValue));
+        navigate(`/tienda?search=${searchValue}`);
     };
 
     return (
