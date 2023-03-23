@@ -1,4 +1,5 @@
 # MARCFASHION
+<img width="1419" alt="Screenshot 2023-03-23 at 3 02 47 PM" src="https://user-images.githubusercontent.com/51935560/227321192-e319a03b-7561-45de-b5ea-f3f77bba5def.png">
 A landing page and e-commerce online shop for an Ecuadorian taylor shop, helping them promote their products and gain visibility in an online environment.
 
 ## Available Scripts
