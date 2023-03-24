@@ -12,11 +12,12 @@
 }
 
 .search-bar input {
+  -webkit-appearance: none;
+  background-color: transparent;
   color: rgb(var(--color-black));
   font-family: var(--h6-font-bold);
   font-size: var(--h6-tablet-size);
   line-height: var(--h6-tablet-height);
-  /*padding: 0px 16px;*/
   padding: 18px 36px;
   width: 100%;
   height: 100%;
@@ -66,7 +67,6 @@
   .search-bar input {
     font-size: var(--h6-size);
     line-height: var(--h6-height);
-    /*padding: 0px 32px;*/
     padding: 20px 40px;
   }
   ::-webkit-input-placeholder {
