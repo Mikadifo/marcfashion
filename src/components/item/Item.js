@@ -1,24 +1,17 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getPriceByOptions } from '../../firebase/priceController';
 import './Item.css';
 
 const Item = ({ info }) => {
     const [hover, setHover] = useState(false);
-    const [price, setPrice] = useState(0);
     const navigate = useNavigate();
 
-    useEffect(() => {
-        const getItemPrice = () => {
-            const result = getPriceByOptions({
-                size: info.sizes[0],
-                category: info.category,
-                fabric: 'Nacional',
-            });
-            setPrice(result.price);
-        };
-        getItemPrice();
-    }, [info]);
+    const price = getPriceByOptions({
+        size: info.sizes[0],
+        category: info.category,
+        fabric: 'Nacional',
+    }).price;
 
     return (
         <div
