@@ -7,7 +7,6 @@ const Select = ({ title, options, value, setValue }) => {
 
     useEffect(() => {
         if (options[0].startsWith('color_')) {
-            console.log('SELECT');
             const data = getColorsByIds(options);
             setColors(data.colors);
         }
