@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Search from '../../components/search/Search';
 import ItemViewer from '../../components/itemViewer/ItemViewer';
@@ -13,14 +13,37 @@ import './ItemView.css';
 
 const ItemView = () => {
     const { itemId } = useParams();
-    const [state, setState] = useState({
+    const [selectedOptions, setSelectedOptions] = useState({});
+    const state = {
         loading: true,
         error: '',
         item: {},
         descriptions: [],
         price: 0,
-    });
-    const [selectedOptions, setSelectedOptions] = useState({});
+    };
+    //TODO:THIS WOULD BE EXPORTED AS A DB QUERY WHEN THE LIST OF LOCAL ITEMS GETS TO LARGE, ONLY THEN USE useEffect
+    const product = products.filter((element) => element.id === itemId);
+    if (product.length === 0) {
+        state.loading = false;
+        state.error = 'El producto no se ha encontrado';
+        state.item = {};
+        state.descriptions = {};
+    } else {
+        state.loading = false;
+        state.error = '';
+        state.item = product[0];
+        state.descriptions = getDescriptionsByIds(product[0].description);
+    }
+
+    if (selectedOptions.fabric && selectedOptions.size) {
+        console.log('Getting Price');
+        const result = getPriceByOptions({
+            size: selectedOptions.size,
+            fabric: selectedOptions.fabric,
+            category: state.item.category,
+        });
+        state.price = result.price;
+    }
 
     const getCompleteBuyingURL = () => {
         return buyProductURL
@@ -37,45 +60,6 @@ const ItemView = () => {
             fabrics: state.item.fabrics,
         };
     };
-
-    useEffect(() => {
-        if (selectedOptions.fabric && selectedOptions.size) {
-            console.log('Getting Price');
-            const result = getPriceByOptions({
-                size: selectedOptions.size,
-                fabric: selectedOptions.fabric,
-                category: state.item.category,
-            });
-            setState((old) => ({
-                ...old,
-                price: result.price,
-            }));
-        }
-    }, [selectedOptions.fabric, selectedOptions.size, state.item.category]);
-
-    useEffect(() => {
-        const getItem = () => {
-            console.log('Getting item...');
-            //THIS WOULD BE EXPORTED AS A DB QUERY WHEN THE LIST OF LOCAL ITEMS GETS TO LARGE
-            const product = products.filter((element) => element.id === itemId);
-            if (product.length === 0) {
-                setState({
-                    loading: false,
-                    error: 'El producto no se ha encontrado',
-                    item: {},
-                    descriptions: {},
-                });
-            } else {
-                setState({
-                    loading: false,
-                    error: '',
-                    item: product[0],
-                    descriptions: getDescriptionsByIds(product[0].description),
-                });
-            }
-        };
-        getItem();
-    }, [itemId]);
 
     return (
         <div className="item-view" data-testid="item-view">
