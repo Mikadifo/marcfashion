@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import Search from '../../components/search/Search';
 import ItemViewer from '../../components/itemViewer/ItemViewer';
 import ItemOptions from '../../components/itemOptions/ItemOptions';
-import { items as products } from './../../resources/info/items';
+import { items as products } from './../../resources/info/items/list';
 import { getDescriptionsByIds } from '../../firebase/descriptionsController';
 import Description from '../../components/description/Description';
 import Button from '../../components/button/Button';

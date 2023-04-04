@@ -1,4 +1,4 @@
-import { items } from '../resources/info/items';
+import { items } from '../resources/info/items/list';
 //import { collection, getDocs } from 'firebase/firestore';
 //import db from './config';
 
