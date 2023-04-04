@@ -1,4 +1,3 @@
-//CASIMIR SUITS
 //negro -> color_1
 import terno_negro1 from './../../imgs/casimir_suits/terno_negro1.jpeg';
 import terno_negro2 from './../../imgs/casimir_suits/terno_negro2.jpeg';
