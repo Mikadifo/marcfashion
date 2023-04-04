@@ -19,7 +19,7 @@ import pantalon_azul_electrico3 from './../../imgs/pants/pantalon_azul_electrico
 import pantalon_vino1 from './../../imgs/pants/pantalon_vino1.jpeg';
 import pantalon_vino2 from './../../imgs/pants/pantalon_vino2.jpeg';
 import pantalon_vino3 from './../../imgs/pants/pantalon_vino3.jpeg';
-//habano -> color_6
+//habano -> color_7
 import pantalon_habano1 from './../../imgs/pants/pantalon_habano1.jpeg';
 import pantalon_habano2 from './../../imgs/pants/pantalon_habano2.jpeg';
 

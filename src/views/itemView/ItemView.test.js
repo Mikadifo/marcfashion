@@ -1,7 +1,7 @@
 import { render, screen, cleanup } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { buyProductURL } from '../../constants/texts';
-import { items } from '../../resources/info/items';
+import { items } from '../../resources/info/items/list';
 import ItemView from './ItemView';
 
 const getCompletedURL = () => {

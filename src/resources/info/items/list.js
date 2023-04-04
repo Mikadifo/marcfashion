@@ -1,6 +1,7 @@
 //Export this list to firebase storage when the list gets to large, whit the same structure
 
 import { pantsImgs } from './pants_imgs';
+import { suitsImgs } from './suits_imgs';
 
 //CORDUROY JACKETS
 //negro -> color_1
@@ -9,7 +10,7 @@ import { pantsImgs } from './pants_imgs';
 //plomo -> color_4
 //azul electrico -> color_5
 //vino -> color_6
-//habano -> color_6
+//habano -> color_7
 
 //SQUARED JACKETS
 //negro -> color_1
@@ -18,7 +19,7 @@ import { pantsImgs } from './pants_imgs';
 //plomo -> color_4
 //azul electrico -> color_5
 //vino -> color_6
-//habano -> color_6
+//habano -> color_7
 
 //PANA JACKETS
 //negro -> color_1
@@ -27,16 +28,7 @@ import { pantsImgs } from './pants_imgs';
 //plomo -> color_4
 //azul electrico -> color_5
 //vino -> color_6
-//habano -> color_6
-
-//CASIMIR SUITS
-//negro -> color_1
-//azul marino -> color_2
-//gris -> color_3
-//plomo -> color_4
-//azul electrico -> color_5
-//vino -> color_6
-//habano -> color_6
+//habano -> color_7
 
 /* If and item img doesn't not have the color option,
  * it's because this color is already in the list.
@@ -192,18 +184,7 @@ export const items = [
             'color_7',
         ],
         sizes: ['S', 'M', 'L', 'XL', '46', '48'],
-        imgs: [
-            {
-                id: 'img_model_black',
-                url: 'https://images.unsplash.com/photo-1598808503746-f34c53b9323e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-                color: 'color_1',
-            },
-            {
-                id: 'img_model_blue',
-                url: 'https://images.unsplash.com/photo-1548454782-15b189d129ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80',
-                color: 'color_2',
-            },
-        ],
+        imgs: suitsImgs,
         fabrics: ['Nacional', 'Importada'],
         description: [
             'desc_general',
