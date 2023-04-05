@@ -5,7 +5,7 @@ import './ItemOptions.css';
 const ItemOptions = ({ options, setOptions }) => {
     const [fabric, setFabric] = useState(options.fabrics[0]);
     const [size, setSize] = useState(options.sizes[0]);
-    const [color, setColor] = useState(options.colors[0]);
+    const [color, setColor] = useState(options.preferredColor);
 
     useEffect(() => {
         setOptions({

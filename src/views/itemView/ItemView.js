@@ -58,6 +58,7 @@ const ItemView = () => {
             sizes: state.item.sizes,
             colors: state.item.colors,
             fabrics: state.item.fabrics,
+            preferredColor: state.item.imgs[0].color,
         };
     };
 
