@@ -3,6 +3,8 @@ import { MemoryRouter } from 'react-router-dom';
 import {
     address,
     email,
+    embededMapURL,
+    locationURL,
     primaryNumber,
     primaryNumberURL,
     secondaryNumber,
@@ -38,12 +40,12 @@ test('render location section & contact view', () => {
     expect(h5).toHaveTextContent('Puedes visitarnos físicamente');
     expect(link).toBeInTheDocument();
     expect(link).toHaveTextContent(address);
-    //expect(link).toHaveAttribute('href', '')//TODO: use the real address
+    expect(link).toHaveAttribute('href', locationURL);
     expect(link).toHaveAttribute('target', '_blank');
     expect(link).toHaveAttribute('rel', 'noreferrer');
     expect(map).toBeInTheDocument();
     expect(map).toHaveAttribute('title', 'marcfashion-map');
-    //expect(map).toHaveAttribute('src', 'marcfashion-map');//TODO: Use the real url
+    expect(map).toHaveAttribute('src', embededMapURL);
 });
 
 test('render contact section', () => {

@@ -1,6 +1,24 @@
+.filter-button button::before {
+  background: rgb(var(--color-black));
+}
+
 /*Begin Tablet, 729-1024px*/
 .store {
   padding: 64px 64px 96px;
+}
+
+.filter-button button {
+  background-image: none;
+  background-color: rgb(var(--color-black));
+  margin-top: 56px;
+}
+
+.items-container {
+  padding-top: 28px;
+}
+
+.item-list {
+  padding: 0 0 32px 32px;
 }
 /*Ends Tablet, 729-1024px*/
 
@@ -9,11 +27,27 @@
   .store {
     padding: 64px 128px 128px;
   }
+
+  .filter-button button {
+    margin-top: 64px;
+  }
+
+  .item-list {
+    padding: 0 0 64px 64px;
+  }
 }
 
 /*MOBILE, 0-728px*/
 @media (max-width: 728px) {
   .store {
     padding: 64px 32px 96px;
+  }
+
+  .filter-button button {
+    margin-top: 48px;
+  }
+
+  .item-list {
+    padding: 0 0 32px;
   }
 }

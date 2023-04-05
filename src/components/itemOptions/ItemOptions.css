@@ -1,0 +1,16 @@
+.select-options-container div:last-child {
+  margin-bottom: 0;
+}
+
+/*Begins MOBILE and Tablet, 0-1024px*/
+.select-options-container div {
+  margin-bottom: 32px;
+}
+/*Ends MOBILE and Tablet, 0-1024px*/
+
+/*PC, >= 1025px*/
+@media (min-width: 1025px) {
+  .select-options-container div {
+    margin-bottom: 36px;
+  }
+}

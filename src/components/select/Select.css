@@ -1,0 +1,67 @@
+/*Begin Tablet, 729-1024px*/
+.select-container label {
+  color: rgb(var(--color-black));
+  font-family: var(--h5-font-bold);
+  font-size: var(--h5-tablet-size);
+  line-height: var(--h5-tablet-height);
+  margin-bottom: 8px;
+}
+
+/*TODO: Missing this for pc*/
+.select-container select {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  color: var(--color-black-75);
+  font-family: var(--paragraph-font);
+  font-size: var(--paragraph-tablet-size);
+  line-height: var(--paragraph-tablet-height);
+  padding: 8px 8px;
+  outline: none;
+  cursor: inherit;
+  border: none;
+}
+
+.select-container select:focus {
+  color: var(--color-secondary);
+}
+
+.select-options {
+  border-radius: 0;
+  border: 1px solid var(--color-black-75);
+  cursor: pointer;
+  padding-right: 8px;
+}
+/*End Tablet, 729-1024px*/
+
+/*PC, >= 1025px*/
+@media (min-width: 1025px) {
+  .select-container label {
+    font-size: var(--h5-size);
+    line-height: var(--h5-height);
+    margin-bottom: 12px;
+  }
+
+  .select-container select {
+    font-size: var(--paragraph-size);
+    line-height: var(--paragraph-height);
+    padding: 8px 16px;
+  }
+
+  .select-options {
+    padding-right: 16px;
+  }
+}
+
+/*MOBILE, 0-728px*/
+@media (max-width: 728px) {
+  .select-container label {
+    font-size: var(--h5-phone-size);
+    line-height: var(--h5-phone-height);
+  }
+
+  .select-container select {
+    font-size: var(--paragraph-size);
+    line-height: var(--paragraph-height);
+  }
+}

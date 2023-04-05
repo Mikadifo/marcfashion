@@ -1,0 +1,45 @@
+/*Begin Mobile&Tablet, 0-1024px*/
+.item-description h5 {
+  color: rgb(var(--color-black));
+  font-family: var(--h5-font-bold);
+  font-size: var(--h5-tablet-size);
+  line-height: var(--h5-tablet-height);
+}
+
+.item-description p,
+.item-description li {
+  color: var(--color-black-75);
+  font-family: var(--paragraph-font);
+  font-size: var(--paragraph-tablet-size);
+  line-height: var(--paragraph-tablet-height);
+  margin-bottom: 32px;
+}
+/*Ends Mobile&Tablet, 0-1024px*/
+
+/*PC, >= 1025px*/
+@media (min-width: 1025px) {
+  .item-description h5 {
+    font-size: var(--h5-size);
+    line-height: var(--h5-height);
+  }
+
+  .item-description p,
+  .item-description li {
+    font-size: var(--paragraph-size);
+    line-height: var(--paragraph-height);
+  }
+}
+
+/*MOBILE, 0-728px*/
+@media (max-width: 728px) {
+  .item-description h5 {
+    font-size: var(--h5-phone-size);
+    line-height: var(--h5-phone-height);
+  }
+
+  .item-description p,
+  .item-description li {
+    font-size: var(--paragraph-size);
+    line-height: var(--paragraph-height);
+  }
+}

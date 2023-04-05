@@ -1,4 +1,4 @@
-import { address } from '../../constants/texts';
+import { address, locationURL } from '../../constants/texts';
 
 export const footerLists = [
     {
@@ -58,7 +58,7 @@ export const footerLists = [
         links: [
             {
                 id: 'fl-ubicacion',
-                url: '#',
+                url: locationURL,
                 name: address,
             },
         ],

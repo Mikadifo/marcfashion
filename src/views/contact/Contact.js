@@ -1,12 +1,15 @@
 import Button from '../../components/button/Button';
 import FooterHero from '../../components/footerHero/FooterHero';
+import { otherLocations } from '../../resources/info/locations';
 import {
     address,
     email,
+    locationURL,
     primaryNumber,
     primaryNumberURL,
     secondaryNumber,
     secondaryNumberURL,
+    embededMapURL,
 } from './../../constants/texts';
 import './Contact.css';
 
@@ -14,16 +17,31 @@ const Contact = () => {
     const locationSection = () => (
         <div className="location text-center">
             <h3>Ubicación</h3>
-            {/* TODO: Change map url */}
             <iframe
                 title="marcfashion-map"
                 className="map-frame"
-                src="https://maps.google.com/maps?q=centeravid&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                src={embededMapURL}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
-            <h5 className="text-start">Puedes visitarnos físicamente</h5>
-            <a href="#" target="_blank" rel="noreferrer" className="text-start">
+            <h5 className="text-start">Puedes visitarnos físicamente en:</h5>
+            <a
+                href={locationURL}
+                target="_blank"
+                rel="noreferrer"
+                className="text-start location-link"
+            >
                 <p>{address}</p>
             </a>
+            <h5 className="text-start">
+                También puedes encontrarnos en la sección de ropa de:
+            </h5>
+            {otherLocations.map((cityLocation) => (
+                <p className="text-start" key={cityLocation.id}>
+                    {cityLocation.locations}
+                </p>
+            ))}
         </div>
     );
     const contactSection = () => (
