@@ -7,7 +7,7 @@ import ItemView from './ItemView';
 const getCompletedURL = () => {
     return buyProductURL
         .replace('$name', items[0].name)
-        .replace('$color', items[0].colors[0])
+        .replace('$color', items[0].imgs[0].color)
         .replace('$size', items[0].sizes[0])
         .replace('$fabric', items[0].fabrics[0]);
 };
