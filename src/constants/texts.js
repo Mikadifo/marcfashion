@@ -17,4 +17,5 @@ export const locationURL =
 export const embededMapURL =
     'https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7977.75894722424!2d-78.676551!3d-1.242988!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMTQnMzMuNCJTIDc4wrA0MCczMi41Ilc!5e0!3m2!1sen!2sus!4v1679100744700!5m2!1sen!2sus';
 export const customizedProductURL = `${primaryNumberURL}?text=¡Hola! Me gustaría conseguir una prenda personalizada.%0a`;
-export const buyProductURL = `${primaryNumberURL}?text=¡Hola! Me gustaría saber la forma de pago sobre este producto: ($name, $color, Talla $size, Tela $fabric)%0a`;
+export const buyProductText =
+    '¡Hola! Me gustaría saber la forma de pago sobre este producto: ($name, $color, Talla $size, Tela $fabric)';

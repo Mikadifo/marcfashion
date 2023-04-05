@@ -1,15 +1,19 @@
 import { render, screen, cleanup } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
-import { buyProductURL } from '../../constants/texts';
+import { buyProductText, primaryNumberURL } from '../../constants/texts';
 import { items } from '../../resources/info/items/list';
 import ItemView from './ItemView';
 
 const getCompletedURL = () => {
-    return buyProductURL
+    const buyProductURL = new URL(primaryNumberURL);
+    const newBuyProductText = buyProductText
         .replace('$name', items[0].name)
         .replace('$color', items[0].imgs[0].color)
         .replace('$size', items[0].sizes[0])
         .replace('$fabric', items[0].fabrics[0]);
+    buyProductURL.searchParams.set('text', newBuyProductText);
+
+    return buyProductURL.toString();
 };
 
 beforeEach(() => {
@@ -43,6 +47,7 @@ test('render all elements when an item is clicked', () => {
     expect(productTitle).toHaveTextContent(items[0].name);
     expect(productPrice).toHaveTextContent('$47.00');
     expect(buyButton).toHaveTextContent('Comprar');
+    console.log(getCompletedURL());
     expect(buyButton).toHaveAttribute('href', getCompletedURL());
     expect(buyButton).toHaveAttribute('target', '_blank');
     expect(buyButton).toHaveAttribute('rel', 'noreferrer');

@@ -8,7 +8,7 @@ import { getDescriptionsByIds } from '../../firebase/descriptionsController';
 import Description from '../../components/description/Description';
 import Button from '../../components/button/Button';
 import { getPriceByOptions } from '../../firebase/priceController';
-import { buyProductURL } from '../../constants/texts';
+import { buyProductText, primaryNumberURL } from '../../constants/texts';
 import './ItemView.css';
 
 const ItemView = () => {
@@ -46,11 +46,15 @@ const ItemView = () => {
     }
 
     const getCompleteBuyingURL = () => {
-        return buyProductURL
+        const buyProductURL = new URL(primaryNumberURL);
+        const newBuyProductText = buyProductText
             .replace('$name', state.item.name)
             .replace('$color', selectedOptions.color)
             .replace('$size', selectedOptions.size)
             .replace('$fabric', selectedOptions.fabric);
+        buyProductURL.searchParams.set('text', newBuyProductText);
+
+        return buyProductURL.toString();
     };
 
     const getItemOptions = () => {
