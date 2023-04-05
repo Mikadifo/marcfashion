@@ -43,7 +43,12 @@ const ItemViewer = ({ imgs, selectedColor }) => {
                         id={img.color ? img.color : img.id}
                         key={img.id}
                     >
-                        <img src={img.url} alt={`Product img ${i}`} />
+                        <img
+                            src={img.url}
+                            alt={`Product img ${i}`}
+                            loading="lazy"
+                            decoding="async"
+                        />
                     </div>
                 ))}
             </div>

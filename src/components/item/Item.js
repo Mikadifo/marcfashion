@@ -22,7 +22,12 @@ const Item = ({ info }) => {
             onClick={() => navigate(`/tienda/${info.id}`)}
             data-testid="item-card"
         >
-            <img src={info.imgs[0].url} alt={info.name} />
+            <img
+                src={info.imgs[0].url}
+                alt={info.name}
+                loading="lazy"
+                decoding="async"
+            />
             <p>{info.name}</p>
             <h5>{price === 0 || !price ? '--' : '$' + price.toFixed(2)}</h5>
         </div>

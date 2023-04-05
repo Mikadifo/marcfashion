@@ -16,7 +16,12 @@ import './StandardsSection.css';
 const Home = () => {
     const introSection = () => (
         <div className="intro text-center">
-            <img src={homeTemp} alt="Brand_Model_Picture" />
+            <img
+                src={homeTemp}
+                alt="Brand_Model_Picture"
+                loading="lazy"
+                decoding="async"
+            />
             <h2>
                 <span className="brand-left">MARC</span>
                 <span className="brand-right">FASHION</span>
