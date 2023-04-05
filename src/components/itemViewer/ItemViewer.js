@@ -1,6 +1,16 @@
+import { useEffect } from 'react';
 import './ItemViewer.css';
 
 const ItemViewer = ({ imgs, selectedColor }) => {
+    useEffect(() => {
+        const activeColors = document.querySelectorAll('.active');
+        if (activeColors.length <= 2) return;
+        activeColors.forEach((activeColor) => {
+            if (selectedColor !== activeColor.id)
+                activeColor.className = activeColor.className.split(' ')[0];
+        });
+    }, [selectedColor]);
+
     return (
         <div
             id="itemCarousel"
@@ -15,7 +25,10 @@ const ItemViewer = ({ imgs, selectedColor }) => {
                         key={img.id}
                         data-bs-target="#itemCarousel"
                         data-bs-slide-to={i}
-                        className={img.color === selectedColor ? 'active' : ''}
+                        id={img.color ? img.color : img.id}
+                        className={`carousel-item-button ${
+                            img.color === selectedColor ? 'active' : ''
+                        }`}
                         aria-current="true"
                         aria-label={`Slide ${i}`}
                     />
@@ -25,8 +38,9 @@ const ItemViewer = ({ imgs, selectedColor }) => {
                 {imgs.map((img, i) => (
                     <div
                         className={`carousel-item ${
-                            img.color === selectedColor && 'active'
+                            img.color === selectedColor ? 'active' : ''
                         }`}
+                        id={img.color ? img.color : img.id}
                         key={img.id}
                     >
                         <img src={img.url} alt={`Product img ${i}`} />

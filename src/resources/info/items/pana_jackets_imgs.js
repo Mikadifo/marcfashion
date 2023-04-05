@@ -15,6 +15,11 @@ import chaqueta_pana_habano_1 from './../../imgs/pana_jackets/chaqueta_pana_haba
 
 export const panaJacketsImgs = [
     {
+        id: 'img_chaqueta_pana_plomo_1',
+        url: chaqueta_pana_plomo1,
+        color: 'color_4',
+    },
+    {
         id: 'img_chaqueta_pana_negro_1',
         url: chaqueta_pana_negro1,
         color: 'color_1',
@@ -28,11 +33,6 @@ export const panaJacketsImgs = [
         id: 'img_chaqueta_pana_gris_1',
         url: chaqueta_pana_gris1,
         color: 'color_3',
-    },
-    {
-        id: 'img_chaqueta_pana_plomo_1',
-        url: chaqueta_pana_plomo1,
-        color: 'color_4',
     },
     {
         id: 'img_chaqueta_pana_azul_electrico_1',

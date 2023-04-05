@@ -14,11 +14,17 @@ import chaqueta_corduroy_azul_electrico1 from './../../imgs/corduroy_jackets/cha
 import chaqueta_corduroy_azul_electrico2 from './../../imgs/corduroy_jackets/chaqueta_corduroy_azul_electrico2.jpeg';
 //vino -> color_6
 import chaqueta_corduroy_vino1 from './../../imgs/corduroy_jackets/chaqueta_corduroy_vino1.jpeg';
+import chaqueta_corduroy_vino2 from './../../imgs/corduroy_jackets/chaqueta_corduroy_vino2.jpeg';
 //habano -> color_7
 import chaqueta_corduroy_habano_1 from './../../imgs/corduroy_jackets/chaqueta_corduroy_habano_1.jpeg';
 import chaqueta_corduroy_habano_2 from './../../imgs/corduroy_jackets/chaqueta_corduroy_habano_2.jpeg';
 
 export const corduroyJacketsImgs = [
+    {
+        id: 'img_chaqueta_corduroy_vino_1',
+        url: chaqueta_corduroy_vino1,
+        color: 'color_6',
+    },
     {
         id: 'img_chaqueta_corduroy_negro_1',
         url: chaqueta_corduroy_negro1,
@@ -61,9 +67,8 @@ export const corduroyJacketsImgs = [
         url: chaqueta_corduroy_azul_electrico2,
     },
     {
-        id: 'img_chaqueta_corduroy_vino_1',
-        url: chaqueta_corduroy_vino1,
-        color: 'color_6',
+        id: 'img_chaqueta_corduroy_vino_2',
+        url: chaqueta_corduroy_vino2,
     },
     {
         id: 'img_chaqueta_corduroy_habano_1',
