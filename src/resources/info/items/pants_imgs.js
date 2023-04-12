@@ -7,6 +7,8 @@ import pantalon_azul_marino1 from './../../imgs/pants/pantalon_azul_marino1.jpeg
 import pantalon_azul_marino2 from './../../imgs/pants/pantalon_azul_marino2.jpeg';
 import pantalon_azul_marino3 from './../../imgs/pants/pantalon_azul_marino3.jpeg';
 //gris -> color_3
+//TODO: Missing this color
+import noColorLinked from './../../imgs/noColorLinked.png';
 //plomo -> color_4
 import pantalon_plomo1 from './../../imgs/pants/pantalon_plomo1.jpeg';
 import pantalon_plomo2 from './../../imgs/pants/pantalon_plomo2.jpeg';
@@ -24,6 +26,19 @@ import pantalon_habano1 from './../../imgs/pants/pantalon_habano1.jpeg';
 import pantalon_habano2 from './../../imgs/pants/pantalon_habano2.jpeg';
 
 export const pantsImgs = [
+    {
+        id: 'img_pant_plomo_1',
+        url: pantalon_plomo1,
+        color: 'color_4',
+    },
+    {
+        id: 'img_pant_plomo_2',
+        url: pantalon_plomo2,
+    },
+    {
+        id: 'img_pant_plomo_3',
+        url: pantalon_plomo3,
+    },
     {
         id: 'img_pant_negro_1',
         url: pantalon_negro1,
@@ -51,17 +66,9 @@ export const pantsImgs = [
         url: pantalon_azul_marino3,
     },
     {
-        id: 'img_pant_plomo_1',
-        url: pantalon_plomo1,
-        color: 'color_4',
-    },
-    {
-        id: 'img_pant_plomo_2',
-        url: pantalon_plomo2,
-    },
-    {
-        id: 'img_pant_plomo_3',
-        url: pantalon_plomo3,
+        id: 'img_pant_gris_1',
+        url: noColorLinked,
+        color: 'color_3',
     },
     {
         id: 'img_pant_azul_electrico_1',

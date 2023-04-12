@@ -22,8 +22,8 @@ const ItemView = () => {
         price: 0,
     };
     //TODO:THIS WOULD BE EXPORTED AS A DB QUERY WHEN THE LIST OF LOCAL ITEMS GETS TO LARGE, ONLY THEN USE useEffect
-    const product = products.filter((element) => element.id === itemId);
-    if (product.length === 0) {
+    const product = products.filter((element) => element.id === itemId)[0];
+    if (!product) {
         state.loading = false;
         state.error = 'El producto no se ha encontrado';
         state.item = {};
@@ -31,12 +31,11 @@ const ItemView = () => {
     } else {
         state.loading = false;
         state.error = '';
-        state.item = product[0];
-        state.descriptions = getDescriptionsByIds(product[0].description);
+        state.item = product;
+        state.descriptions = getDescriptionsByIds(product.description);
     }
 
     if (selectedOptions.fabric && selectedOptions.size) {
-        console.log('Getting Price');
         const result = getPriceByOptions({
             size: selectedOptions.size,
             fabric: selectedOptions.fabric,

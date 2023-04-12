@@ -7,6 +7,8 @@ import terno_azul_marino2 from './../../imgs/casimir_suits/terno_azul_marino2.jp
 //gris -> color_3
 import terno_gris1 from './../../imgs/casimir_suits/terno_gris1.jpeg';
 //plomo -> color_4
+//TODO: Missing this color
+import noColorLinked from './../../imgs/noColorLinked.png';
 //azul electrico -> color_5
 import terno_azul_electrico1 from './../../imgs/casimir_suits/terno_azul_electrico1.jpeg';
 import terno_azul_electrico2 from './../../imgs/casimir_suits/terno_azul_electrico2.jpeg';
@@ -39,6 +41,11 @@ export const suitsImgs = [
         id: 'img_terno_gris_1',
         url: terno_gris1,
         color: 'color_3',
+    },
+    {
+        id: 'img_terno_plomo_1',
+        url: noColorLinked,
+        color: 'color_4',
     },
     {
         id: 'img_terno_azul_electrico_1',
