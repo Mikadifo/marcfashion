@@ -28,7 +28,7 @@ test('render call to action & home view', () => {
     const button = home.getElementsByTagName('a')[0];
     expect(home).toBeInTheDocument();
     expect(img).toBeInTheDocument();
-    expect(img).toHaveAttribute('src', 'home_temp.png'); //TODO: change the name of the img
+    expect(img).toHaveAttribute('src', 'home.jpeg');
     expect(img).toHaveAttribute('alt');
     expect(h2).toBeInTheDocument();
     expect(h2).toHaveTextContent('MARCFASHION');

@@ -13,6 +13,8 @@
     0px 6.6501px 5.32008px rgba(29, 39, 38, 0.0282725),
     0px 2.76726px 2.21381px rgba(29, 39, 38, 0.0196802);
   margin-bottom: 64px;
+  object-fit: cover;
+  filter: contrast(1.2) brightness(92%) saturate(1.5);
 }
 
 .intro h2 {

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import NavBar from '../../components/navbar/NavBar';
 import Button from './../../components/button/Button';
-import homeTemp from './../../resources/imgs/home_temp.png'; //TODO: Change when get imgs
+import homeTemp from './../../resources/imgs/home.jpeg';
 import FooterHero from '../../components/footerHero/FooterHero';
 import { standards } from './../../resources/info/standars';
 import {
@@ -16,7 +16,12 @@ import './StandardsSection.css';
 const Home = () => {
     const introSection = () => (
         <div className="intro text-center">
-            <img src={homeTemp} alt="Brand_Model_Picture" />
+            <img
+                src={homeTemp}
+                alt="Brand_Model_Picture"
+                loading="lazy"
+                decoding="async"
+            />
             <h2>
                 <span className="brand-left">MARC</span>
                 <span className="brand-right">FASHION</span>

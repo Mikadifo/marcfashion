@@ -23,11 +23,11 @@ export const descriptions = [
         title: 'Instrucciones de compra',
         type: 'list',
         content: [
-            'Elije el tipo de tela, tallas, color y cantidad que desees.',
-            'Presiona Comprar.',
-            'Presiona continuar en el link de Whatsapp.',
-            'Envía el mensaje escrito automáticamente, puedes agregar lo que quieras, pero recuerda no borrar ninguna parte del mensaje ya que eso sirve como referencia para nuestros asistentes.',
-            'Espera una respuesta y confirmación de uno de nuestros asistentes, ellos lo guiarán a través del proceso de pago.',
+            'Elije el tipo de tela, talla y color que desees.',
+            "Presiona 'Comprar'.",
+            'Presiona continuar en la siguiente pantalla de Whatsapp.',
+            'Envía el mensaje escrito automáticamente, puedes agregar lo que desees, pero recuerda no borrar ninguna parte del mensaje ya que eso sirve como referencia para nuestros asistentes.',
+            'Espera una respuesta y confirmación de uno de nuestros asistentes, ellos te guiarán a través del proceso de pago y entrega.',
         ],
     },
     {

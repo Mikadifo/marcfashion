@@ -22,7 +22,12 @@ const NavBar = () => {
                     to="/"
                     data-testid="nav-logo"
                 >
-                    <img src={logo} alt="Logo" />
+                    <img
+                        src={logo}
+                        alt="Logo"
+                        loading="lazy"
+                        decoding="async"
+                    />
                 </Link>
                 <button
                     className="navbar-toggler nav-menu p-0"
