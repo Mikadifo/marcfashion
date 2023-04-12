@@ -47,7 +47,6 @@ test('render all elements when an item is clicked', () => {
     expect(productTitle).toHaveTextContent(items[0].name);
     expect(productPrice).toHaveTextContent('$47.00');
     expect(buyButton).toHaveTextContent('Comprar');
-    console.log(getCompletedURL());
     expect(buyButton).toHaveAttribute('href', getCompletedURL());
     expect(buyButton).toHaveAttribute('target', '_blank');
     expect(buyButton).toHaveAttribute('rel', 'noreferrer');

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import NavBar from '../../components/navbar/NavBar';
 import Button from './../../components/button/Button';
-import homeTemp from './../../resources/imgs/home_temp.png'; //TODO: Change when get imgs
+import homeTemp from './../../resources/imgs/home.jpeg';
 import FooterHero from '../../components/footerHero/FooterHero';
 import { standards } from './../../resources/info/standars';
 import {
