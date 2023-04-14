@@ -11,7 +11,7 @@ export const primaryNumber = '+ 593 99 548 7770';
 export const primaryNumberURL = 'https://wa.me/593995487770';
 export const secondaryNumber = '+ 593 99 684 4966';
 export const secondaryNumberURL = 'https://wa.me/593996844966';
-export const email = 'alexistoala@outlook.com';
+export const email = 'sastreria@marc-fashion.com';
 export const locationURL =
     "https://www.google.com/maps/place/1%C2%B014'33.4%22S+78%C2%B040'32.5%22W/@-1.2427849,-78.6763546,18.59z/data=!4m4!3m3!8m2!3d-1.2426025!4d-78.6756877?hl=en-US";
 export const embededMapURL =
