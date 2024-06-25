@@ -36,7 +36,7 @@ export const footerLists = [
             },
             {
                 id: 'fl-instagram',
-                url: 'https://www.instagram.com/alexistoala/',
+                url: 'https://www.instagram.com/imalexis97/',
                 name: 'Instagram',
             },
             {
