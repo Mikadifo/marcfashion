@@ -1,6 +1,6 @@
 # Custom License / Licencia Personalizada (MIT-based / Basada en MIT)
 
-**Last Original Project Modification / Última modificación del proyecto original:** April 09, 2025 / Abril 09, 2025
+**Last Original Project Modification / Última modificación del proyecto original:** June 04, 2025 / Junio 04, 2025
 **Last Original Project Deployment / Último despliegue del proyecto original:** April 09, 2025 / Abril 09, 2025
 **Original Repository / Repositorio original:** https://github.com/Mikadifo/marcfashion
 
